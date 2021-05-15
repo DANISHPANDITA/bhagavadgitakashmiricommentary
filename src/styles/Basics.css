@@ -1,0 +1,120 @@
+.basics {
+  background-color: #fff5df;
+  overflow: auto;
+}
+.Chapters {
+  width: 95vw;
+  padding: 0.3vw;
+  text-align: center;
+  background-color: rgb(248, 228, 187);
+  margin-top: 3vh;
+  border-radius: 0.9vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: monospace;
+}
+.Chapters p {
+  text-shadow: 2px 2px 4px #928f8f;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: justify;
+}
+.Chapters h3 {
+  margin: 0.5vh;
+  font-size: 1.7vw;
+}
+.Chapters h4 {
+  font-size: 1.4vw;
+}
+.Chapters h2 {
+  margin: 0.5vh;
+  font-size: 1.9vw;
+  text-decoration: underline;
+}
+.Chapters h2:hover {
+  cursor: pointer;
+  color: rgb(241, 74, 74);
+  transition: ease-in-out 200ms;
+}
+.heading {
+  top: 0;
+  position: sticky;
+}
+.chapters {
+  height: 85vh;
+  margin-top: 3vh;
+  overflow-y: scroll;
+}
+.GlossaryButton {
+  margin-top: 1vh;
+  background-color: rgb(248, 187, 73);
+  border: none;
+  outline: none;
+  border-radius: 0.5vw;
+  padding: 0 0.5vw 0 0.5vw;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 2vw;
+}
+.GlossaryButton:hover {
+  cursor: pointer;
+  background-color: rgb(206, 169, 102);
+  color: rgb(10, 10, 77);
+  transition: ease-in-out 250ms;
+}
+.ChangeLangButton {
+  background-color: #ffc996;
+  width: 30vw;
+  height: 6vh;
+  font-size: 2em;
+  font-family: fantasy;
+  border-radius: 0.7vw;
+  outline: none;
+  border: none;
+  top: 0;
+  position: sticky;
+}
+.ChangeLangButton:hover {
+  cursor: pointer;
+  background-color: #ffb26b;
+}
+@media only screen and (max-width: 600px) {
+  .Chapters h2 {
+    font-size: 4.7vw;
+  }
+  .Chapters h3 {
+    font-size: 4vw;
+  }
+  .Chapters h4 {
+    font-size: 3.7vw;
+  }
+  .Chapters p {
+    font-size: 3.4vw;
+  }
+  .ChangeLangButton {
+    width: 45vw;
+    height: 4vh;
+    font-size: 0.9em;
+  }
+
+  .chapters {
+    height: 94vh;
+    margin-top: 2vh;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .Chapters h2 {
+    font-size: 3.5vw;
+  }
+  .Chapters h3 {
+    font-size: 3vw;
+  }
+  .chapters {
+    height: 88vh;
+  }
+  .Chapters h4 {
+    font-size: 2.7vw;
+  }
+  .Chapters p {
+    font-size: 2.3vw;
+  }
+}

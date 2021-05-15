@@ -1,0 +1,90 @@
+body {
+  background-color: #ccb866;
+}
+.homePage {
+  height: 95vh;
+  width: 95vw;
+  border-radius: 1vw;
+  margin-top: 2.5vh;
+  background: url("https://assets.entrepreneur.com/content/3x2/2000/1597240199-bhagavadgita-6s.jpg")
+    no-repeat center;
+  background-size: cover;
+  box-shadow: rgba(255, 255, 255, 0.692) 0px 4px 16px,
+    rgba(255, 255, 255, 0.692) 0px 8px 24px,
+    rgba(255, 255, 255, 0.692) 0px 16px 24px;
+}
+.centerHome {
+  margin: 0 auto 0 auto;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details {
+  padding: 0.5vw;
+  border-radius: 0.7vw;
+  background: linear-gradient(
+    0deg,
+    rgb(248, 225, 201) 0%,
+    rgb(252, 223, 193) 25%,
+    rgb(248, 212, 175) 75%,
+    rgb(255, 209, 163) 100%
+  );
+  margin-top: 55vh;
+  opacity: 0.8;
+}
+.details p {
+  font-family: fantasy;
+  font-size: 1.7em;
+  margin-bottom: 4vh;
+  font-weight: 800;
+  color: rgb(66, 65, 65);
+  text-align: center;
+}
+.centerHome img {
+  margin-top: 5vw;
+  width: 75vw;
+  height: 55vh;
+  object-fit: contain;
+  border-radius: 0.9vw;
+}
+.details button {
+  width: 80%;
+  height: 5vh;
+  background-color: rgb(57, 57, 100);
+  border-radius: 0.9vw;
+  border: none;
+  outline: none;
+  font-family: "Times New Roman";
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 3vh;
+}
+.centerHome button:hover {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+  background-color: rgb(138, 138, 196);
+}
+@media only screen and (max-width: 500px) {
+  .centerHome {
+    width: 60vw;
+  }
+  .centerHome button {
+    width: 50vw;
+  }
+  .details {
+    margin-top: 35vh;
+  }
+  .centerHome img {
+    height: 45vh;
+  }
+
+  .details p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 50px) and (max-width: 1050px) {
+  .centerHome {
+    width: 60vw;
+  }
+}

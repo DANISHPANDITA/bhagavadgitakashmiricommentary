@@ -1,0 +1,70 @@
+.ShlokaInfo {
+  background-color: #fbfce9;
+  opacity: 0.85;
+  font-family: monospace;
+  margin-top: 2vh;
+  width: 95vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  border-radius: 0.9vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ShlokaInfo h2 {
+  font-size: 1.7vw;
+  font-weight: 800 !important;
+}
+.ShlokaInfo p {
+  font-size: 1.4vw;
+  margin-bottom: 0.7vh !important;
+}
+.wordMeaning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ShlokaInfo h2 {
+  margin-bottom: 0.5vh;
+}
+.transliteration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meaning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bolderText {
+  font-style: oblique;
+  font-size: 1.5vw;
+  color: rgb(6, 42, 109);
+  background-color: rgb(253, 193, 82);
+  text-decoration: underline;
+  width: 40vw;
+  text-align: center;
+  border-radius: 0.3vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .ShlokaInfo h2 {
+    font-size: 4.1vw;
+  }
+  .ShlokaInfo p {
+    font-size: 3.5vw;
+  }
+  .bolderText {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+  .ShlokaInfo h2 {
+    font-size: 3.2vw;
+  }
+  .ShlokaInfo p {
+    font-size: 2.8vw;
+  }
+  .bolderText {
+    font-size: 3vw;
+  }
+}
