@@ -33,6 +33,7 @@ function ChapterDetails() {
       .then((data) =>
         setHindiChapDetails(Object.values(data.verses)[chapterNo.chapterNo - 1])
       );
+
     if (1 <= chapterNo.chapterNo <= 5) {
       db.collection("Gita")
         .doc(chapterNo.chapterNo)
@@ -40,7 +41,8 @@ function ChapterDetails() {
         .onSnapshot((snapshot) =>
           setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
         );
-    } else if (6 <= chapterNo.chapterNo <= 9) {
+    }
+    if (6 <= chapterNo.chapterNo <= 9) {
       db1
         .collection("Gita")
         .doc(chapterNo.chapterNo)
@@ -48,7 +50,8 @@ function ChapterDetails() {
         .onSnapshot((snapshot) =>
           setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
         );
-    } else if (10 <= chapterNo.chapterNo <= 13) {
+    }
+    if (10 <= chapterNo.chapterNo <= 13) {
       db2
         .collection("Gita")
         .doc(chapterNo.chapterNo)
@@ -56,7 +59,8 @@ function ChapterDetails() {
         .onSnapshot((snapshot) =>
           setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
         );
-    } else if (14 <= chapterNo.chapterNo <= 16) {
+    }
+    if (14 <= chapterNo.chapterNo <= 16) {
       db3
         .collection("Gita")
         .doc(chapterNo.chapterNo)
@@ -64,7 +68,8 @@ function ChapterDetails() {
         .onSnapshot((snapshot) =>
           setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
         );
-    } else if (17 <= chapterNo.chapterNo <= 18) {
+    }
+    if (17 <= chapterNo.chapterNo <= 18) {
       db4
         .collection("Gita")
         .doc(chapterNo.chapterNo)

@@ -67,4 +67,7 @@
   .bolderText {
     font-size: 3vw;
   }
+  .audioPlayer {
+    width: 80%;
+  }
 }
