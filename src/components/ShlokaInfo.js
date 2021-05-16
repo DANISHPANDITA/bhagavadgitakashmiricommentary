@@ -5,7 +5,6 @@ function ShlokaInfo({
   meaning,
   number,
   text,
-  word_meanings,
   transliteration,
   hindiNumber,
   hindiWordsMeanings,
@@ -32,8 +31,6 @@ function ShlokaInfo({
         </h2>
         <p className="text">{text}</p>
         <p className="wordMeaning">
-          <span className="bolderText">Words Meanings</span> {word_meanings}
-          <br />
           <span className="bolderText">शब्दार्थ</span> {hindiWordsMeanings}
         </p>
         <p className="transliteration">

@@ -51,6 +51,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 #myTable {
   width: 100%;
   background: #f7f8f8; /* fallback for old browsers */

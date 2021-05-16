@@ -30,14 +30,17 @@
   font-size: 1.9vw;
   text-decoration: underline;
 }
-.Chapters h2:hover {
-  cursor: pointer;
-  color: rgb(241, 74, 74);
-  transition: ease-in-out 200ms;
-}
+
 .heading {
   top: 0;
   position: sticky;
+}
+.gotodetail {
+  margin-left: 1vw;
+}
+.gotodetail:hover {
+  cursor: pointer;
+  color: rgb(255, 65, 65);
 }
 .chapters {
   height: 85vh;
@@ -57,7 +60,7 @@
 }
 .GlossaryButton:hover {
   cursor: pointer;
-  background-color: rgb(206, 169, 102);
+  background-color: rgb(255, 209, 123);
   color: rgb(10, 10, 77);
   transition: ease-in-out 250ms;
 }

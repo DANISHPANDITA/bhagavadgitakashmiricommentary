@@ -10,12 +10,12 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .ShlokaInfo h2 {
-  font-size: 1.7vw;
+  font-size: 1.6vw;
   font-weight: 800 !important;
 }
 .ShlokaInfo p {
-  font-size: 1.4vw;
-  margin-bottom: 0.7vh !important;
+  font-size: 1.2vw;
+  margin-bottom: 0.5vh !important;
 }
 .wordMeaning {
   display: flex;
@@ -23,7 +23,7 @@
   align-items: center;
 }
 .ShlokaInfo h2 {
-  margin-bottom: 0.5vh;
+  margin-bottom: 0.4vh;
 }
 .transliteration {
   display: flex;
@@ -37,7 +37,7 @@
 }
 .bolderText {
   font-style: oblique;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   color: rgb(6, 42, 109);
   background-color: rgb(253, 193, 82);
   text-decoration: underline;

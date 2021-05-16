@@ -7,6 +7,7 @@ import { JumpCircleLoading } from "react-loadingg";
 import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
 import Slide from "react-reveal/Slide";
+import { DoubleArrowRounded } from "@material-ui/icons";
 function Basics() {
   const [EngChapBasics, setEngChapBasics] = useState([]);
   const [HindiChapBasics, setHindiChapBasics] = useState([]);
@@ -49,13 +50,19 @@ function Basics() {
               ? EngChapBasics.map((data) => {
                   return (
                     <center>
-                      <div key={data.chapter_number} className="Chapters">
-                        <h2
-                          onClick={() => {
-                            history.push(`/chapter/${data.chapter_number}`);
-                          }}
-                        >
+                      <div
+                        id={data.chapter_number}
+                        key={data.chapter_number}
+                        className="Chapters"
+                      >
+                        <h2>
                           Chapter-{data.chapter_number}
+                          <DoubleArrowRounded
+                            className="gotodetail"
+                            onClick={() => {
+                              history.push(`/chapter/${data.chapter_number}`);
+                            }}
+                          />
                         </h2>
                         <h3>
                           {data.name} ({data.name_meaning})
@@ -69,24 +76,30 @@ function Basics() {
               : HindiChapBasics.map((data) => {
                   return (
                     <center>
-                      <div key={data.chapter_number} className="Chapters">
-                        <h2
-                          onClick={() => {
-                            indian.convert(
-                              data.chapter_number,
-                              "hindi",
-                              "english",
-                              function (err, res) {
-                                if (err) {
-                                  alert(err);
-                                } else {
-                                  history.push(`/chapter/${res}`);
-                                }
-                              }
-                            );
-                          }}
-                        >
+                      <div
+                        id={data.chapter_number}
+                        key={data.chapter_number}
+                        className="Chapters"
+                      >
+                        <h2>
                           अध्याय-{data.chapter_number}
+                          <DoubleArrowRounded
+                            className="gotodetail"
+                            onClick={() => {
+                              indian.convert(
+                                data.chapter_number,
+                                "hindi",
+                                "english",
+                                function (err, res) {
+                                  if (err) {
+                                    alert(err);
+                                  } else {
+                                    history.push(`/chapter/${res}`);
+                                  }
+                                }
+                              );
+                            }}
+                          />
                         </h2>
                         <h3>
                           {data.name} ({data.name_meaning})

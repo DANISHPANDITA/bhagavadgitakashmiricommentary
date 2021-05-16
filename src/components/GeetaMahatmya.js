@@ -25,21 +25,67 @@ function GeetaMahatmya() {
     <div className="geetaMahatmya">
       <center>
         <Pulse>
-          <div className="mahatmyaheadingtop">
-            <div className="mahatmyaHeading">
-              <p>Shrimad BhagavadGeeta Mahatmya</p>
-              <p> (श्रीमद भगवद-गीता माहात्म्यं)</p>
+          <div className="mahatmyaTop">
+            <div className="mahatmyaheadingtop">
+              <div className="mahatmyaHeading">
+                <p>Shrimad BhagavadGeeta Mahatmya</p>
+                <p> (श्रीमद भगवद-गीता माहात्म्यं)</p>
+              </div>
+              <Link style={{ textDecoration: "none" }} to="/basics">
+                <h2 className="goToChapters">Go to Chapters</h2>
+              </Link>
             </div>
-            <Link to="/basics">
-              <h2 className="goToChapters">Go to Chapters</h2>
-            </Link>
+            <table>
+              <tr>
+                <td className="gotoshlokatitle">Go to Shloka</td>
+                <td>
+                  <a className="linkMahamtmya" href="#1">
+                    1
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#2">
+                    2
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#3">
+                    3
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#4">
+                    4
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#5">
+                    5
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#6">
+                    6
+                  </a>
+                </td>
+                <td>
+                  <a className="linkMahamtmya" href="#7">
+                    7
+                  </a>
+                </td>
+              </tr>
+            </table>
           </div>
         </Pulse>
         <div className="shloka">
           {mahatmyaShlokas.length > 0 ? (
             mahatmyaShlokas.map((shlok) => {
               return (
-                <div key={shlok.shloka.Number} className="mahatmyaShloka">
+                <div
+                  id={shlok.shloka.Number}
+                  key={shlok.shloka.Number}
+                  className="mahatmyaShloka"
+                >
                   <h2>Shloka (श्लोक) - {shlok.shloka.Number}</h2>
                   <p>{shlok.shloka.Hindi}</p>
                   <p>{shlok.shloka["Hindi-Meaning"]}</p>

@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 function ChapterDetails() {
   const chapterNo = useParams();
+
   var [EngChapDetails, setEngChapDetails] = useState([]);
   const [HindiChapDetails, setHindiChapDetails] = useState([]);
   const [shlokaAudio, setShlokaAudio] = useState([]);
@@ -129,76 +130,109 @@ function ChapterDetails() {
     }
   };
 
+  var x = [];
+  for (var z = 0; z < engD.sort(sortFunction).length; z++) {
+    var q = engD.sort(sortFunction)[z];
+    if (q) {
+      x.push(q[1].verse_number);
+    }
+  }
+  const newX = [];
+  while (x.length) newX.push(x.splice(0, 6));
+
   return (
     <div className="chapter">
       <div className="chapterHeading">
         <center>
           <h2>Chapter(अध्याय)-{Object.values(chapterNo.chapterNo)}</h2>
         </center>
+        <center>
+          <table className="TableOfShlokas">
+            {newX.map((t) => {
+              return (
+                <tr>
+                  {t.map((i) => {
+                    return (
+                      <td key={i}>
+                        <a className="linktoShloka" href={`#${i}`}>
+                          {i}
+                        </a>
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </table>
+        </center>
       </div>
-      <div className="shlokaByChapter">
-        {engD.sort(sortFunction).map((shlok) => {
-          let hindi = Object.values(HindiChapDetails).find(
-            (ele) =>
-              convertFromHindi(ele.verse_number) === shlok[1].verse_number
-          );
-          let URLshlok = shlokaAudio.find(
-            (ele) => findShlokaAudio(ele.Number) === shlok[1].verse_number
-          );
+      <div className="ChapterDets">
+        <div className="shlokaByChapter">
+          {engD.sort(sortFunction).map((shlok) => {
+            let hindi = Object.values(HindiChapDetails).find(
+              (ele) =>
+                convertFromHindi(ele.verse_number) === shlok[1].verse_number
+            );
+            let URLshlok = shlokaAudio.find(
+              (ele) => findShlokaAudio(ele.Number) === shlok[1].verse_number
+            );
 
-          if (hindi) {
-            if (URLshlok) {
-              return (
-                <ShlokaInfo
-                  key={shlok[1].verse_number}
-                  number={shlok[1].verse_number}
-                  hindiNumber={hindi.verse_number}
-                  hindiWordsMeanings={hindi.word_meanings}
-                  text={shlok[1].text}
-                  hindiMeaning={hindi.meaning}
-                  meaning={shlok[1].meaning}
-                  word_meanings={shlok[1].word_meanings}
-                  transliteration={shlok[1].transliteration}
-                  mp3={URLshlok.Shloka}
-                />
-              );
-            } else {
-              return (
-                <ShlokaInfo
-                  key={shlok[1].verse_number}
-                  number={shlok[1].verse_number}
-                  hindiNumber={hindi.verse_number}
-                  hindiWordsMeanings={hindi.word_meanings}
-                  text={shlok[1].text}
-                  hindiMeaning={hindi.meaning}
-                  meaning={shlok[1].meaning}
-                  word_meanings={shlok[1].word_meanings}
-                  transliteration={shlok[1].transliteration}
-                />
-              );
+            if (hindi) {
+              if (URLshlok) {
+                return (
+                  <div className="shlokaDet" id={shlok[1].verse_number}>
+                    <ShlokaInfo
+                      key={shlok[1].verse_number}
+                      number={shlok[1].verse_number}
+                      hindiNumber={hindi.verse_number}
+                      hindiWordsMeanings={hindi.word_meanings}
+                      text={shlok[1].text}
+                      hindiMeaning={hindi.meaning}
+                      meaning={shlok[1].meaning}
+                      transliteration={shlok[1].transliteration}
+                      mp3={URLshlok.Shloka}
+                    />
+                  </div>
+                );
+              } else {
+                return (
+                  <div className="shlokaDet" id={shlok[1].verse_number}>
+                    <ShlokaInfo
+                      key={shlok[1].verse_number}
+                      number={shlok[1].verse_number}
+                      hindiNumber={hindi.verse_number}
+                      hindiWordsMeanings={hindi.word_meanings}
+                      text={shlok[1].text}
+                      hindiMeaning={hindi.meaning}
+                      meaning={shlok[1].meaning}
+                      transliteration={shlok[1].transliteration}
+                    />
+                  </div>
+                );
+              }
             }
-          }
-        })}
-      </div>
-      <div className="footerButtons">
-        <div className="changeChapters">
-          {chapterNo.chapterNo > 1 && (
-            <Link to={`/chapter/${parseInt(chapterNo.chapterNo) - 1}`}>
-              <p className="changeChapter">
-                {" "}
-                ↩ Previous Chapter (पिछला अध्याय)
-              </p>
-            </Link>
-          )}
-          {chapterNo.chapterNo < 18 && (
-            <Link to={`/chapter/${parseInt(chapterNo.chapterNo) + 1}`}>
-              <p className="changeChapter"> Next Chapter (अगला अध्याय) ↪ </p>
-            </Link>
-          )}
+          })}
         </div>
-        <Link to="/">
-          <p className="homepageButton"> Go to Homepage </p>
-        </Link>
+        <div className="footerButtons">
+          <div className="changeChapters">
+            {chapterNo.chapterNo > 1 && (
+              <Link to={`/chapter/${parseInt(chapterNo.chapterNo) - 1}`}>
+                <p className="changeChapter">
+                  {" "}
+                  ↩ Previous Chapter (पिछला अध्याय)
+                </p>
+              </Link>
+            )}
+            {chapterNo.chapterNo < 18 && (
+              <Link to={`/chapter/${parseInt(chapterNo.chapterNo) + 1}`}>
+                <p className="changeChapter"> Next Chapter (अगला अध्याय) ↪ </p>
+              </Link>
+            )}
+          </div>
+          <Link to="/">
+            <p className="homepageButton"> Go to Homepage </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
