@@ -8,19 +8,26 @@ import { db2 } from "../firebase/firebase3";
 import { db3 } from "../firebase/firebase4";
 import { db4 } from "../firebase/firebase5";
 import ShlokaInfo from "./ShlokaInfo";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { ArrowLeftRounded, ArrowRightRounded } from "@material-ui/icons";
+import Tooltip from "@material-ui/core/Tooltip";
 
 function ChapterDetails() {
   const chapterNo = useParams();
-
+  const history = useHistory();
   var [EngChapDetails, setEngChapDetails] = useState([]);
   const [HindiChapDetails, setHindiChapDetails] = useState([]);
   const [shlokaAudio, setShlokaAudio] = useState([]);
+  const [shlokaAudio1, setShlokaAudio1] = useState([]);
+  const [shlokaAudio2, setShlokaAudio2] = useState([]);
+  const [shlokaAudio3, setShlokaAudio3] = useState([]);
+  const [shlokaAudio4, setShlokaAudio4] = useState([]);
   var engD = [];
+  var HindiD = [];
   const engDataURL =
-    "https://run.mocky.io/v3/182c2a35-c403-461d-890e-23181714350e";
+    "https://run.mocky.io/v3/ebd5cb2d-17f9-4245-afad-2a6bf205ee1a";
   const HindiDataURL =
-    "https://run.mocky.io/v3/d7e0c5f4-965a-48e6-b241-1bcf9cc021fc";
+    "https://run.mocky.io/v3/d38324ba-37df-4c85-9861-ebe288dd2546";
 
   useEffect(() => {
     fetch(engDataURL)
@@ -43,43 +50,51 @@ function ChapterDetails() {
           setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
         );
     }
+  }, [chapterNo]);
+  useEffect(() => {
     if (6 <= chapterNo.chapterNo <= 9) {
       db1
         .collection("Gita")
         .doc(chapterNo.chapterNo)
         .collection("Shlokas")
         .onSnapshot((snapshot) =>
-          setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
+          setShlokaAudio1(snapshot.docs.map((doc) => doc.data()))
         );
     }
+  }, []);
+  useEffect(() => {
     if (10 <= chapterNo.chapterNo <= 13) {
       db2
         .collection("Gita")
         .doc(chapterNo.chapterNo)
         .collection("Shlokas")
         .onSnapshot((snapshot) =>
-          setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
+          setShlokaAudio2(snapshot.docs.map((doc) => doc.data()))
         );
     }
+  }, []);
+  useEffect(() => {
     if (14 <= chapterNo.chapterNo <= 16) {
       db3
         .collection("Gita")
         .doc(chapterNo.chapterNo)
         .collection("Shlokas")
         .onSnapshot((snapshot) =>
-          setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
+          setShlokaAudio3(snapshot.docs.map((doc) => doc.data()))
         );
     }
+  }, []);
+  useEffect(() => {
     if (17 <= chapterNo.chapterNo <= 18) {
       db4
         .collection("Gita")
         .doc(chapterNo.chapterNo)
         .collection("Shlokas")
         .onSnapshot((snapshot) =>
-          setShlokaAudio(snapshot.docs.map((doc) => doc.data()))
+          setShlokaAudio4(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, [chapterNo]);
+  }, []);
 
   function sortFunction(a, b) {
     if (a[0] === b[0]) {
@@ -94,16 +109,23 @@ function ChapterDetails() {
       Object.entries(EngChapDetails)[i][1],
     ]);
   }
+  for (var l = 0; l < Object.entries(HindiChapDetails).length; l++) {
+    HindiD.push([
+      parseInt(Object.entries(HindiChapDetails)[l][0]),
+      Object.entries(HindiChapDetails)[l][1],
+    ]);
+  }
 
   const convertFromHindi = (e) => {
     var x;
     if (e.includes("-")) {
+      var z = e.indexOf("-");
       e = e.split("-").join("");
       indian.convert(e, "hindi", "english", function (err, c) {
         if (err) {
           console.log(err);
         } else {
-          x = c.slice(0, 2).concat("-").concat(c.slice(2, 4));
+          x = c.slice(0, z) + "-" + c.slice(z, c.length);
         }
       });
     } else {
@@ -116,18 +138,6 @@ function ChapterDetails() {
       });
     }
     return x;
-  };
-  function getPosition(string, subString, index) {
-    return string.split(subString, index).join(subString).length;
-  }
-
-  const findShlokaAudio = (e) => {
-    if (e.includes("-")) {
-      var x = getPosition(e, "-", 1);
-      return e.slice(x + 1, e.length);
-    } else {
-      return e;
-    }
   };
 
   var x = [];
@@ -143,9 +153,35 @@ function ChapterDetails() {
   return (
     <div className="chapter">
       <div className="chapterHeading">
-        <center>
+        <div className="chapterHeadingTitle">
+          {chapterNo.chapterNo > 1 && (
+            <Tooltip title="Previous Chapter">
+              <ArrowLeftRounded
+                onClick={() => {
+                  history.push(
+                    `/chapter/${parseInt(chapterNo.chapterNo) - 1}/#1`
+                  );
+                  window.location.reload();
+                }}
+                className="changeChap"
+              />
+            </Tooltip>
+          )}
           <h2>Chapter(अध्याय)-{Object.values(chapterNo.chapterNo)}</h2>
-        </center>
+          {chapterNo.chapterNo < 18 && (
+            <Tooltip title="Next Chapter">
+              <ArrowRightRounded
+                onClick={() => {
+                  history.push(
+                    `/chapter/${parseInt(chapterNo.chapterNo) + 1}/#1`
+                  );
+                  window.location.reload();
+                }}
+                className="changeChap"
+              />
+            </Tooltip>
+          )}
+        </div>
         <center>
           <table className="TableOfShlokas">
             {newX.map((t) => {
@@ -168,71 +204,84 @@ function ChapterDetails() {
       </div>
       <div className="ChapterDets">
         <div className="shlokaByChapter">
-          {engD.sort(sortFunction).map((shlok) => {
-            let hindi = Object.values(HindiChapDetails).find(
-              (ele) =>
-                convertFromHindi(ele.verse_number) === shlok[1].verse_number
-            );
-            let URLshlok = shlokaAudio.find(
-              (ele) => findShlokaAudio(ele.Number) === shlok[1].verse_number
-            );
-
-            if (hindi) {
-              if (URLshlok) {
-                return (
-                  <div className="shlokaDet" id={shlok[1].verse_number}>
-                    <ShlokaInfo
-                      key={shlok[1].verse_number}
-                      number={shlok[1].verse_number}
-                      hindiNumber={hindi.verse_number}
-                      hindiWordsMeanings={hindi.word_meanings}
-                      text={shlok[1].text}
-                      hindiMeaning={hindi.meaning}
-                      meaning={shlok[1].meaning}
-                      transliteration={shlok[1].transliteration}
-                      mp3={URLshlok.Shloka}
-                    />
-                  </div>
+          {HindiD.sort(sortFunction).length > 0 &&
+            engD.sort(sortFunction).map((shlok) => {
+              let hindi = HindiD.sort(sortFunction).find(
+                (ele) =>
+                  convertFromHindi(ele[1].verse_number) ===
+                  shlok[1].verse_number
+              );
+              let URLshlok;
+              if (shlokaAudio.length > 0) {
+                URLshlok = shlokaAudio.find(
+                  (ele) => ele.Number === shlok[1].verse_number
+                );
+              } else if (shlokaAudio1.length > 0) {
+                URLshlok = shlokaAudio1.find(
+                  (ele) => ele.Number === shlok[1].verse_number
+                );
+              } else if (shlokaAudio2.length > 0) {
+                URLshlok = shlokaAudio2.find(
+                  (ele) => ele.Number === shlok[1].verse_number
+                );
+              } else if (shlokaAudio3.length > 0) {
+                URLshlok = shlokaAudio3.find(
+                  (ele) => ele.Number === shlok[1].verse_number
                 );
               } else {
-                return (
-                  <div className="shlokaDet" id={shlok[1].verse_number}>
-                    <ShlokaInfo
-                      key={shlok[1].verse_number}
-                      number={shlok[1].verse_number}
-                      hindiNumber={hindi.verse_number}
-                      hindiWordsMeanings={hindi.word_meanings}
-                      text={shlok[1].text}
-                      hindiMeaning={hindi.meaning}
-                      meaning={shlok[1].meaning}
-                      transliteration={shlok[1].transliteration}
-                    />
-                  </div>
+                URLshlok = shlokaAudio4.find(
+                  (ele) => ele.Number === shlok[1].verse_number
                 );
               }
-            }
-          })}
+              if (hindi) {
+                if (URLshlok) {
+                  return (
+                    <div className="shlokaDet" id={shlok[1].verse_number}>
+                      <ShlokaInfo
+                        key={shlok[1].verse_number}
+                        number={shlok[1].verse_number}
+                        hindiNumber={hindi[1].verse_number}
+                        hindiWordsMeanings={hindi[1].word_meanings}
+                        text={shlok[1].text}
+                        hindiMeaning={hindi[1].meaning}
+                        meaning={shlok[1].meaning}
+                        transliteration={shlok[1].transliteration}
+                        mp3={URLshlok.Shloka}
+                      />
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div className="shlokaDet" id={shlok[1].verse_number}>
+                      <ShlokaInfo
+                        key={shlok[1].verse_number}
+                        number={shlok[1].verse_number}
+                        hindiNumber={hindi[1].verse_number}
+                        hindiWordsMeanings={hindi[1].word_meanings}
+                        text={shlok[1].text}
+                        hindiMeaning={hindi[1].meaning}
+                        meaning={shlok[1].meaning}
+                        transliteration={shlok[1].transliteration}
+                        noComm="Commentary not available yet"
+                      />
+                    </div>
+                  );
+                }
+              }
+            })}
         </div>
-        <div className="footerButtons">
-          <div className="changeChapters">
-            {chapterNo.chapterNo > 1 && (
-              <Link to={`/chapter/${parseInt(chapterNo.chapterNo) - 1}`}>
-                <p className="changeChapter">
-                  {" "}
-                  ↩ Previous Chapter (पिछला अध्याय)
-                </p>
-              </Link>
-            )}
-            {chapterNo.chapterNo < 18 && (
-              <Link to={`/chapter/${parseInt(chapterNo.chapterNo) + 1}`}>
-                <p className="changeChapter"> Next Chapter (अगला अध्याय) ↪ </p>
-              </Link>
-            )}
-          </div>
-          <Link to="/">
-            <p className="homepageButton"> Go to Homepage </p>
-          </Link>
-        </div>
+      </div>
+      <div className="footer">
+        <center>
+          <button
+            className="homeButton"
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            Go to HomePage
+          </button>
+        </center>
       </div>
     </div>
   );

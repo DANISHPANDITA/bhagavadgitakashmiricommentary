@@ -1,6 +1,10 @@
 .basics {
   background-color: #fff5df;
-  overflow: auto;
+}
+.heading {
+  top: 0;
+  position: sticky;
+  z-index: 100;
 }
 .Chapters {
   width: 95vw;
@@ -31,10 +35,6 @@
   text-decoration: underline;
 }
 
-.heading {
-  top: 0;
-  position: sticky;
-}
 .gotodetail {
   margin-left: 1vw;
 }
@@ -43,7 +43,6 @@
   color: rgb(255, 65, 65);
 }
 .chapters {
-  height: 85vh;
   margin-top: 3vh;
   overflow-y: scroll;
 }
@@ -98,9 +97,7 @@
     height: 4vh;
     font-size: 0.9em;
   }
-
   .chapters {
-    height: 94vh;
     margin-top: 2vh;
   }
 }
@@ -110,9 +107,6 @@
   }
   .Chapters h3 {
     font-size: 3vw;
-  }
-  .chapters {
-    height: 88vh;
   }
   .Chapters h4 {
     font-size: 2.7vw;

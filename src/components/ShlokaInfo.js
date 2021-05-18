@@ -10,6 +10,7 @@ function ShlokaInfo({
   hindiWordsMeanings,
   hindiMeaning,
   mp3,
+  noComm,
 }) {
   document.addEventListener(
     "play",
@@ -23,6 +24,7 @@ function ShlokaInfo({
     },
     true
   );
+
   return (
     <center>
       <div className="ShlokaInfo">
@@ -46,18 +48,22 @@ function ShlokaInfo({
         <p className="meaning">
           <span className="bolderText">Commentary in Kashmiri</span>
         </p>
-        <ReactAudioPlayer
-          className="audioPlayer"
-          style={{
-            width: "60%",
-            height: "10vh",
-            color: "#353434",
-          }}
-          src={mp3}
-          autoPlay={false}
-          controls
-          controlsList="nodownload"
-        />
+        {!noComm ? (
+          <ReactAudioPlayer
+            className="audioPlayer"
+            style={{
+              width: "80%",
+              height: "10vh",
+              color: "#353434",
+            }}
+            src={mp3}
+            autoPlay={false}
+            controls
+            controlsList="nodownload"
+          />
+        ) : (
+          <h2 style={{ fontFamily: "monospace" }}>{noComm}</h2>
+        )}
       </div>
     </center>
   );

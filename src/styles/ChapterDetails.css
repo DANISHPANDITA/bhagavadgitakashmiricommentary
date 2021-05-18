@@ -1,10 +1,29 @@
 * {
   margin: 0;
 }
-.ChapterHeading {
+.chapterHeading {
   top: 0;
   position: sticky;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(230, 227, 227);
+}
+.chapterHeadingTitle {
+  width: 100%;
   background-color: rgb(201, 195, 195);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.changeChap:hover {
+  cursor: pointer;
+  color: rgb(145, 49, 49);
 }
 .TableOfShlokas tr td {
   background-color: rgb(214, 211, 211);
@@ -15,6 +34,23 @@
   background-color: rgb(187, 171, 171);
   transition: ease-in-out 250ms;
 }
+.footer {
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+}
+.homeButton {
+  background-color: rgb(255, 194, 81);
+  color: blue;
+  font-family: "Times New Roman";
+  font-size: 1.1em;
+  font-weight: 700;
+  border: 1px solid rgb(111, 111, 112);
+  outline: none;
+}
+.homeButton:hover {
+  background-color: rgb(250, 201, 136);
+  cursor: pointer;
+}
 .linktoShloka {
   text-decoration: none;
   color: rgb(6, 6, 179);
@@ -23,11 +59,9 @@
   background-color: white;
 }
 .shlokaByChapter {
-  height: 61.5vh;
   overflow-y: scroll;
 }
 .chapterHeading h2 {
-  height: 5vh;
   font-family: monospace;
   font-size: 2.3em;
   color: rgb(19, 53, 47);
@@ -39,71 +73,14 @@
   background-size: contain;
   background-blend-mode: lighten;
 }
-.footerButtons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-}
-.changeChapter {
-  height: 2vh;
-  background-color: rgb(250, 108, 57);
-  color: rgb(5, 24, 107);
-  width: fit-content;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-  font-weight: 700;
-  margin-top: 1vh;
-  border-radius: 0.5vw;
-}
-.homepageButton {
-  height: 2vh;
-  background-color: rgb(250, 108, 57);
-  color: rgb(5, 24, 107);
-  width: fit-content;
-  padding: 0.5vw 1vw 0.5vw 1vw;
-  font-weight: 700;
-  margin-top: 1vh;
-  border-radius: 0.5vw;
-}
-.homepageButton:hover {
-  background-color: orange;
-  transition: ease-in-out 250ms;
-}
-.changeChapters {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.changeChapter:hover {
-  color: rgb(62, 95, 241);
-  background-color: rgb(255, 187, 162);
-  transition: ease-in-out 200ms;
-}
 @media only screen and (max-width: 500px) {
   .chapterHeading h2 {
     font-size: 6vw;
-  }
-  .shlokaByChapter {
-    height: 54.6vh;
-  }
-  .changeChapter {
-    font-size: 2.5vw;
-  }
-  .homepageButton {
-    font-size: 2.5vw;
-  }
-  .footerButtons {
-    flex-direction: column;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1300px) {
   .chapterHeading h2 {
     font-size: 3.2vw;
-  }
-  .shlokaByChapter {
-    height: 90vh;
   }
 }

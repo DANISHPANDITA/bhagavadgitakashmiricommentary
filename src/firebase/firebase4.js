@@ -14,4 +14,5 @@ const app4 = firebase.initializeApp(
 );
 const db3 = app4.firestore();
 const storage3 = app4.storage();
+
 export { db3, storage3 };

@@ -14,9 +14,9 @@ function Basics() {
   const [Lang, setLang] = useState(true);
   const history = useHistory();
   const hindiDataURL =
-    "https://run.mocky.io/v3/d7e0c5f4-965a-48e6-b241-1bcf9cc021fc";
+    "https://run.mocky.io/v3/d38324ba-37df-4c85-9861-ebe288dd2546";
   const engDataURL =
-    "https://run.mocky.io/v3/182c2a35-c403-461d-890e-23181714350e";
+    "https://run.mocky.io/v3/ebd5cb2d-17f9-4245-afad-2a6bf205ee1a";
 
   useEffect(() => {
     fetch(engDataURL)
