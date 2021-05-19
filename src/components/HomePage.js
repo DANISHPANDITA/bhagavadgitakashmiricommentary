@@ -8,15 +8,16 @@ function HomePage() {
   const history = useHistory();
   const [backState, setBackState] = useState(false);
 
-  const goToBasic = () => {
-    history.push("/geetamahatmya");
-  };
-
   useEffect(() => {
     fetch(
       "https://assets.entrepreneur.com/content/3x2/2000/1597240199-bhagavadgita-6s.jpg"
     ).then((res) => setBackState(res.ok));
   }, []);
+
+  const goToBasics = () => {
+    history.push("/geetamahatmya");
+    window.location.reload();
+  };
 
   if (backState) {
     return (
@@ -31,7 +32,7 @@ function HomePage() {
                   By - Sh. Bhushan Lal Ji Bhat <b>(Sharnagat)</b>
                 </p>
                 <center>
-                  <button onClick={goToBasic}>Click here.</button>
+                  <button onClick={goToBasics}>Go to Mahatmya</button>
                 </center>
               </div>
             </Flash>
