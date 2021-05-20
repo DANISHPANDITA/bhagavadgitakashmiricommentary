@@ -2,10 +2,8 @@ import React from "react";
 import "../styles/ShlokaInfo.css";
 import ReactAudioPlayer from "react-audio-player";
 function ShlokaInfo({
-  meaning,
   number,
   text,
-  transliteration,
   hindiNumber,
   hindiWordsMeanings,
   hindiMeaning,
@@ -35,13 +33,7 @@ function ShlokaInfo({
         <p className="wordMeaning">
           <span className="bolderText">शब्दार्थ</span> {hindiWordsMeanings}
         </p>
-        <p className="transliteration">
-          <span className="bolderText"> Transliteration</span>
-          {transliteration}
-        </p>
         <p className="meaning">
-          <span className="bolderText">Meaning</span>
-          {meaning}
           <span className="bolderText">अनुवाद</span>
           {hindiMeaning}
         </p>

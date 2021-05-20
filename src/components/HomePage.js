@@ -14,7 +14,7 @@ function HomePage() {
     ).then((res) => setBackState(res.ok));
   }, []);
 
-  const goToBasics = () => {
+  const goToMahatmya = () => {
     history.push("/geetamahatmya");
     window.location.reload();
   };
@@ -32,7 +32,7 @@ function HomePage() {
                   By - Sh. Bhushan Lal Ji Bhat <b>(Sharnagat)</b>
                 </p>
                 <center>
-                  <button onClick={goToBasics}>Go to Mahatmya</button>
+                  <button onClick={goToMahatmya}>Click here.</button>
                 </center>
               </div>
             </Flash>

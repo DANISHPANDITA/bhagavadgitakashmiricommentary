@@ -25,9 +25,9 @@ function ChapterDetails() {
   var engD = [];
   var HindiD = [];
   const engDataURL =
-    "https://run.mocky.io/v3/ebd5cb2d-17f9-4245-afad-2a6bf205ee1a";
+    "https://run.mocky.io/v3/8b9d04db-19f1-412d-ab3e-df3d4d56fd08";
   const HindiDataURL =
-    "https://run.mocky.io/v3/d38324ba-37df-4c85-9861-ebe288dd2546";
+    "https://run.mocky.io/v3/a0573209-8394-467f-b1e4-28d66c60e8f1";
 
   useEffect(() => {
     fetch(engDataURL)
@@ -148,7 +148,7 @@ function ChapterDetails() {
     }
   }
   const newX = [];
-  while (x.length) newX.push(x.splice(0, 6));
+  while (x.length) newX.push(x.splice(0, 8));
 
   return (
     <div className="chapter">
@@ -244,8 +244,6 @@ function ChapterDetails() {
                         hindiWordsMeanings={hindi[1].word_meanings}
                         text={shlok[1].text}
                         hindiMeaning={hindi[1].meaning}
-                        meaning={shlok[1].meaning}
-                        transliteration={shlok[1].transliteration}
                         mp3={URLshlok.Shloka}
                       />
                     </div>
@@ -260,8 +258,6 @@ function ChapterDetails() {
                         hindiWordsMeanings={hindi[1].word_meanings}
                         text={shlok[1].text}
                         hindiMeaning={hindi[1].meaning}
-                        meaning={shlok[1].meaning}
-                        transliteration={shlok[1].transliteration}
                         noComm="Commentary not available yet"
                       />
                     </div>
