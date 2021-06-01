@@ -210,7 +210,7 @@ p:nth-child(4) {
     font-size: 0.7em;
   }
   .gotochaptersdirect {
-    font-size: 0.6em;
+    font-size: small;
   }
   .mahatmyaShloka h2 {
     font-size: 1.2em;
@@ -240,7 +240,7 @@ p:nth-child(4) {
     font-size: 1.1em;
   }
   .changeMahatmyaState {
-    font-size: 1.15em;
+    font-size: 1em;
   }
   .mahatmyaShloka h2 {
     font-size: 1.5em;

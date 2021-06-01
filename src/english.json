@@ -3654,61 +3654,33 @@
           "word_meanings": "yasya—whose; na ahankṛitaḥ—free from the ego of being the doer; bhāvaḥ—nature; buddhiḥ—intellect; yasya—whose; na lipyate—unattached; hatvā—slay; api—even; saḥ—they; imān—this; lokān—living beings; na—neither; hanti—kill; na—nor; nibadhyate—get bound\n",
           "transliteration": "yasya nāhankṛito bhāvo buddhir yasya na lipyate\nhatvā ‘pi sa imāl lokān na hanti na nibadhyate\n"
         },
-        "18": {
-          "meaning": "Knowledge, the object the knowledge and the knower-this is the threefold inducement to action. The comprehension of actions comes under three heads-the instruments, the object and the subject.",
-          "text": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना |\nकरणं कर्म कर्तेति त्रिविध: कर्मसंग्रह: ॥18॥\n",
-          "verse_number": "18",
-          "word_meanings": "jñānam—knowledge; jñeyam—the object of knowledge; parijñātā—the knower; tri-vidhā—three factors; karma-chodanā—factors that induce action; karaṇam—the instrumens of action; karma—the act; kartā—the doer; iti—thus; tri-vidhaḥ—threefold; karma-saṅgrahaḥ—constituents of action\n",
-          "transliteration": "jñānaṁ jñeyaṁ parijñātā tri-vidhā karma-chodanā\nkaraṇaṁ karma karteti tri-vidhaḥ karma-saṅgrahaḥ\n"
+        "18-19": {
+          "meaning": "Knowledge, the object the knowledge and the knower-this is the threefold inducement to action. The comprehension of actions comes under three heads-the instruments, the object and the subject. Knowledge, action and agent are stated in the teaching about the gunas to be only of three kinds according to the differences of the gunas. Hear about them also as they are.",
+          "text": "ज्ञानं ज्ञेयं परिज्ञाता त्रिविधा कर्मचोदना |\nकरणं कर्म कर्तेति त्रिविध: कर्मसंग्रह: ॥18॥\n ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदत: |\nप्रोच्यते गुणसङ् ख्याने यथावच्छृणु तान्यपि ॥19॥\n",
+          "verse_number": "18-19",
+          "word_meanings": "jñānam—knowledge; jñeyam—the object of knowledge; parijñātā—the knower; tri-vidhā—three factors; karma-chodanā—factors that induce action; karaṇam—the instrumens of action; karma—the act; kartā—the doer; iti—thus; tri-vidhaḥ—threefold; karma-saṅgrahaḥ—constituents of action\n jñānam—knowledge; karma—action; cha—and; kartā—doer; cha—also; tridhā—of three kinds; eva—certainly; guṇa-bhedataḥ—distinguished according to the three modes of material nature; prochyate—are declared; guṇa-saṅkhyāne—Sānkhya philosophy, which describes the modes of material nature; yathā-vat—as they are; śhṛiṇu—listen; tāni—them; api—also\n",
+          "transliteration": "jñānaṁ jñeyaṁ parijñātā tri-vidhā karma-chodanā\nkaraṇaṁ karma karteti tri-vidhaḥ karma-saṅgrahaḥ\n jñānaṁ karma cha kartā cha tridhaiva guṇa-bhedataḥ\nprochyate guṇa-saṅkhyāne yathāvach chhṛiṇu tāny api\n"
         },
-        "19": {
-          "meaning": "Knowledge, action and agent are stated in the teaching about the gunas to be only of three kinds according to the differences of the gunas. Hear about them also as they are.",
-          "text": "ज्ञानं कर्म च कर्ता च त्रिधैव गुणभेदत: |\nप्रोच्यते गुणसङ् ख्याने यथावच्छृणु तान्यपि ॥19॥\n",
-          "verse_number": "19",
-          "word_meanings": "jñānam—knowledge; karma—action; cha—and; kartā—doer; cha—also; tridhā—of three kinds; eva—certainly; guṇa-bhedataḥ—distinguished according to the three modes of material nature; prochyate—are declared; guṇa-saṅkhyāne—Sānkhya philosophy, which describes the modes of material nature; yathā-vat—as they are; śhṛiṇu—listen; tāni—them; api—also\n",
-          "transliteration": "jñānaṁ karma cha kartā cha tridhaiva guṇa-bhedataḥ\nprochyate guṇa-saṅkhyāne yathāvach chhṛiṇu tāny api\n"
+        "20-21": {
+          "meaning": "Know that knowledge to be originating from sattva through which one sees a single, undecaying, undivided Entity in all the diversified things. But know that knowledge to be originating from rajas which, amidst all things, apprehends the different entities of various kinds as distinct [As possessing distinct selves.",
+          "text": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते |\nअविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्विकम् ॥20॥\n पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान् |\nवेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम् ॥21॥\n",
+          "verse_number": "20-21",
+          "word_meanings": "sarva-bhūteṣhu—within all living beings; yena—by which; ekam—one; bhāvam—nature; avyayam—imperishable; īkṣhate—one sees; avibhaktam—undivided; vibhakteṣhu—in diversity; tat—that; jñānam—knowledge; viddhi—understand; sāttvikam—in the mode of goodness\n pṛithaktvena—unconnected; tu—however; yat—which; jñānam—knowledge; nānā-bhāvān—manifold entities; pṛithak-vidhān—of diversity; vetti—consider; sarveṣhu—in all; bhūteṣhu—living entities; tat—that; jñānam—knowledge; viddhi—know; rājasam—in the mode of passion\n",
+          "transliteration": "sarva-bhūteṣhu yenaikaṁ bhāvam avyayam īkṣhate\navibhaktaṁ vibhakteṣhu taj jñānaṁ viddhi sāttvikam\n pṛithaktvena tu yaj jñānaṁ nānā-bhāvān pṛithag-vidhān\nvetti sarveṣhu bhūteṣhu taj jñānaṁ viddhi rājasam\n"
         },
-        "20": {
-          "meaning": "Know that knowledge to be originating from sattva through which one sees a single, undecaying, undivided Entity in all the diversified things.",
-          "text": "सर्वभूतेषु येनैकं भावमव्ययमीक्षते |\nअविभक्तं विभक्तेषु तज्ज्ञानं विद्धि सात्विकम् ॥20॥\n",
-          "verse_number": "20",
-          "word_meanings": "sarva-bhūteṣhu—within all living beings; yena—by which; ekam—one; bhāvam—nature; avyayam—imperishable; īkṣhate—one sees; avibhaktam—undivided; vibhakteṣhu—in diversity; tat—that; jñānam—knowledge; viddhi—understand; sāttvikam—in the mode of goodness\n",
-          "transliteration": "sarva-bhūteṣhu yenaikaṁ bhāvam avyayam īkṣhate\navibhaktaṁ vibhakteṣhu taj jñānaṁ viddhi sāttvikam\n"
+        "22-23": {
+          "meaning": "But that (knowledge) is said to be born of tamas which is confined to one form as though it were all, which is irrational, not concern with truth and trivial. The daily obligatory action which is performed without attachment and without likes or dislikes by one who does not hanker for rewards, that is said to be born of sattva.",
+          "text": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम् |\nअतत्वार्थवदल्पं च तत्तामसमुदाहृतम् ॥22॥\n नियतं सङ्गरहितमरागद्वेषत: कृतम् |\nअफलप्रेप्सुना कर्म यतत्सात्विकमुच्यते ॥23॥\n",
+          "verse_number": "22-23",
+          "word_meanings": "yat—which; tu—but; kṛitsna-vat—as if it encompasses the whole; ekasmin—in single; kārye—action; saktam—engrossed; ahaitukam—without a reason; atattva-artha-vat—not based on truth; alpam—fragmental; cha—and; tat—that; tāmasam—in the mode of ignorance; udāhṛitam—is said to be\n niyatam—in accordance with scriptures; saṅga-rahitam—free from attachment; arāga-dveṣhataḥ—free from attachment and aversion; kṛitam—done; aphala-prepsunā—without desire for rewards; karma—action; yat—which; tat—that; sāttvikam—in the mode of goodness; uchyate—is called\n",
+          "transliteration": "yat tu kṛitsna-vad ekasmin kārye saktam ahaitukam\natattvārtha-vad alpaṁ cha tat tāmasam udāhṛitam\n niyataṁ saṅga-rahitam arāga-dveṣhataḥ kṛitam\naphala-prepsunā karma yat tat sāttvikam uchyate\n"
         },
-        "21": {
-          "meaning": "But know that knowledge to be originating from rajas which, amidst all things, apprehends the different entities of various kinds as distinct [As possessing distinct selves.].",
-          "text": "पृथक्त्वेन तु यज्ज्ञानं नानाभावान्पृथग्विधान् |\nवेत्ति सर्वेषु भूतेषु तज्ज्ञानं विद्धि राजसम् ॥21॥\n",
-          "verse_number": "21",
-          "word_meanings": "pṛithaktvena—unconnected; tu—however; yat—which; jñānam—knowledge; nānā-bhāvān—manifold entities; pṛithak-vidhān—of diversity; vetti—consider; sarveṣhu—in all; bhūteṣhu—living entities; tat—that; jñānam—knowledge; viddhi—know; rājasam—in the mode of passion\n",
-          "transliteration": "pṛithaktvena tu yaj jñānaṁ nānā-bhāvān pṛithag-vidhān\nvetti sarveṣhu bhūteṣhu taj jñānaṁ viddhi rājasam\n"
-        },
-        "22": {
-          "meaning": "But that (knowledge) is said to be born of tamas which is confined to one form as though it were all, which is irrational, not concern with truth and trivial.",
-          "text": "यत्तु कृत्स्नवदेकस्मिन्कार्ये सक्तमहैतुकम् |\nअतत्वार्थवदल्पं च तत्तामसमुदाहृतम् ॥22॥\n",
-          "verse_number": "22",
-          "word_meanings": "yat—which; tu—but; kṛitsna-vat—as if it encompasses the whole; ekasmin—in single; kārye—action; saktam—engrossed; ahaitukam—without a reason; atattva-artha-vat—not based on truth; alpam—fragmental; cha—and; tat—that; tāmasam—in the mode of ignorance; udāhṛitam—is said to be\n",
-          "transliteration": "yat tu kṛitsna-vad ekasmin kārye saktam ahaitukam\natattvārtha-vad alpaṁ cha tat tāmasam udāhṛitam\n"
-        },
-        "23": {
-          "meaning": "The daily obligatory action which is performed without attachment and without likes or dislikes by one who does not hanker for rewards, that is said to be born of sattva.",
-          "text": "नियतं सङ्गरहितमरागद्वेषत: कृतम् |\nअफलप्रेप्सुना कर्म यतत्सात्विकमुच्यते ॥23॥\n",
-          "verse_number": "23",
-          "word_meanings": "niyatam—in accordance with scriptures; saṅga-rahitam—free from attachment; arāga-dveṣhataḥ—free from attachment and aversion; kṛitam—done; aphala-prepsunā—without desire for rewards; karma—action; yat—which; tat—that; sāttvikam—in the mode of goodness; uchyate—is called\n",
-          "transliteration": "niyataṁ saṅga-rahitam arāga-dveṣhataḥ kṛitam\naphala-prepsunā karma yat tat sāttvikam uchyate\n"
-        },
-        "24": {
-          "meaning": "But that action is said to be born of rajas which is done by one desirous of results or by one who is egotistic, and which is highly strenuous.",
-          "text": "यत्तुžकामेप्सुना कर्म साहङ्कारेण वा पुन: |\nक्रियते बहुलायासं तद्राजसमुदाहृतम् ॥24॥\n",
-          "verse_number": "24",
-          "word_meanings": "yat—which; tu—but; kāma-īpsunā—prompted by selfish desire; karma—action; sa-ahaṅkāreṇa—with pride; vā—or; punaḥ—again; kriyate—enacted; bahula-āyāsam—stressfully; tat—that; rājasam—in the nature of passion; udāhṛitam—is said to be\n",
-          "transliteration": "yat tu kāmepsunā karma sāhankāreṇa vā punaḥ\nkriyate bahulāyāsaṁ tad rājasam udāhṛitam\n"
-        },
-        "25": {
-          "meaning": "That action is said to be born of tamas which is undertaken out of delusion, (and) without consideration of its conscience, loss, harm and ability.",
-          "text": "अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम् |\nमोहादारभ्यते कर्म यतत्तामसमुच्यते ॥25॥\n",
-          "verse_number": "25",
-          "word_meanings": "anubandham—consequences; kṣhayam—loss; hinsām—injury; anapekṣhya—by disregarding; cha—and; pauruṣham—one’s own ability; mohāt—out of delusion; ārabhyate—is begun; karma—action; yat—which; tat—that; tāmasam—in the mode of ignorance; uchyate—is declared to be\n",
-          "transliteration": "anubandhaṁ kṣhayaṁ hinsām anapekṣhya cha pauruṣham\nmohād ārabhyate karma yat tat tāmasam uchyate\n"
+        "24-25": {
+          "meaning": "But that action is said to be born of rajas which is done by one desirous of results or by one who is egotistic, and which is highly strenuous. That action is said to be born of tamas which is undertaken out of delusion, (and) without consideration of its conscience, loss, harm and ability.",
+          "text": "यत्तुžकामेप्सुना कर्म साहङ्कारेण वा पुन: |\nक्रियते बहुलायासं तद्राजसमुदाहृतम् ॥24॥\n अनुबन्धं क्षयं हिंसामनपेक्ष्य च पौरुषम् |\nमोहादारभ्यते कर्म यतत्तामसमुच्यते ॥25॥\n",
+          "verse_number": "24-25",
+          "word_meanings": "yat—which; tu—but; kāma-īpsunā—prompted by selfish desire; karma—action; sa-ahaṅkāreṇa—with pride; vā—or; punaḥ—again; kriyate—enacted; bahula-āyāsam—stressfully; tat—that; rājasam—in the nature of passion; udāhṛitam—is said to be\n anubandham—consequences; kṣhayam—loss; hinsām—injury; anapekṣhya—by disregarding; cha—and; pauruṣham—one’s own ability; mohāt—out of delusion; ārabhyate—is begun; karma—action; yat—which; tat—that; tāmasam—in the mode of ignorance; uchyate—is declared to be\n",
+          "transliteration": "yat tu kāmepsunā karma sāhankāreṇa vā punaḥ\nkriyate bahulāyāsaṁ tad rājasam udāhṛitam\n anubandhaṁ kṣhayaṁ hinsām anapekṣhya cha pauruṣham\nmohād ārabhyate karma yat tat tāmasam uchyate\n"
         },
         "26": {
           "meaning": "The agent who is free from attachment [Attachment to results or the idea of agentship.], not egotistic, endowed with fortitude and diligence, and unperturbed by success and failure is said to be possessed of sattva.",

@@ -8,15 +8,16 @@ import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
 import Slide from "react-reveal/Slide";
 import { DoubleArrowRounded } from "@material-ui/icons";
+
 function Basics() {
   const [EngChapBasics, setEngChapBasics] = useState([]);
   const [HindiChapBasics, setHindiChapBasics] = useState([]);
   const [Lang, setLang] = useState(true);
   const history = useHistory();
   const hindiDataURL =
-    "https://run.mocky.io/v3/a0573209-8394-467f-b1e4-28d66c60e8f1";
+    "https://run.mocky.io/v3/4b7c2bd4-4704-4db6-96c1-858aba5e060d";
   const engDataURL =
-    "https://run.mocky.io/v3/8b9d04db-19f1-412d-ab3e-df3d4d56fd08";
+    "https://run.mocky.io/v3/dd6a1fda-fbc4-4272-9c93-72708b08a6f4";
 
   useEffect(() => {
     fetch(engDataURL)

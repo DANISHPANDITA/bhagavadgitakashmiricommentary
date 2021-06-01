@@ -73,7 +73,7 @@ body {
     width: 50vw;
   }
   .details {
-    margin-top: 35vh;
+    margin-top: 55vh;
   }
   .centerHome img {
     height: 45vh;
@@ -85,6 +85,12 @@ body {
 }
 @media only screen and (min-width: 50px) and (max-width: 1050px) {
   .centerHome {
-    width: 60vw;
+    width: 80vw;
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 1051px) and (max-width: 1300px) {
+  .centerHome {
+    width: 70vw;
   }
 }

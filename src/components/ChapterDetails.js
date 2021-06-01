@@ -8,7 +8,7 @@ import { db2 } from "../firebase/firebase3";
 import { db3 } from "../firebase/firebase4";
 import { db4 } from "../firebase/firebase5";
 import ShlokaInfo from "./ShlokaInfo";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { ArrowLeftRounded, ArrowRightRounded } from "@material-ui/icons";
 import Tooltip from "@material-ui/core/Tooltip";
 
@@ -25,9 +25,9 @@ function ChapterDetails() {
   var engD = [];
   var HindiD = [];
   const engDataURL =
-    "https://run.mocky.io/v3/8b9d04db-19f1-412d-ab3e-df3d4d56fd08";
+    "https://run.mocky.io/v3/dd6a1fda-fbc4-4272-9c93-72708b08a6f4";
   const HindiDataURL =
-    "https://run.mocky.io/v3/a0573209-8394-467f-b1e4-28d66c60e8f1";
+    "https://run.mocky.io/v3/4b7c2bd4-4704-4db6-96c1-858aba5e060d";
 
   useEffect(() => {
     fetch(engDataURL)
