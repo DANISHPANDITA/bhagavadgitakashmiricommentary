@@ -61,7 +61,7 @@ function ChapterDetails() {
           setShlokaAudio1(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, []);
+  }, [chapterNo]);
   useEffect(() => {
     if (10 <= chapterNo.chapterNo <= 13) {
       db2
@@ -72,7 +72,7 @@ function ChapterDetails() {
           setShlokaAudio2(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, []);
+  }, [chapterNo]);
   useEffect(() => {
     if (14 <= chapterNo.chapterNo <= 16) {
       db3
@@ -83,7 +83,7 @@ function ChapterDetails() {
           setShlokaAudio3(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, []);
+  }, [chapterNo]);
   useEffect(() => {
     if (17 <= chapterNo.chapterNo <= 18) {
       db4
@@ -94,7 +94,7 @@ function ChapterDetails() {
           setShlokaAudio4(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, []);
+  }, [chapterNo]);
 
   function sortFunction(a, b) {
     if (a[0] === b[0]) {
@@ -184,21 +184,23 @@ function ChapterDetails() {
         </div>
         <center>
           <table className="TableOfShlokas">
-            {newX.map((t) => {
-              return (
-                <tr>
-                  {t.map((i) => {
-                    return (
-                      <td key={i}>
-                        <a className="linktoShloka" href={`#${i}`}>
-                          {i}
-                        </a>
-                      </td>
-                    );
-                  })}
-                </tr>
-              );
-            })}
+            <tbody>
+              {newX.map((t) => {
+                return (
+                  <tr key={t}>
+                    {t.map((i) => {
+                      return (
+                        <td key={i}>
+                          <a className="linktoShloka" href={`#${i}`}>
+                            {i}
+                          </a>
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
           </table>
         </center>
       </div>

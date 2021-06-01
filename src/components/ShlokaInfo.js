@@ -38,13 +38,13 @@ function ShlokaInfo({
           {hindiMeaning}
         </p>
         <p className="meaning">
-          <span className="bolderText">Commentary in Kashmiri</span>
+          <span className="commentaryTitle">Commentary in Kashmiri</span>
         </p>
         {!noComm ? (
           <ReactAudioPlayer
             className="audioPlayer"
             style={{
-              width: "80%",
+              width: "90%",
               height: "10vh",
               color: "#353434",
             }}
