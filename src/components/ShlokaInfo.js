@@ -47,7 +47,7 @@ function ShlokaInfo({
           <ReactAudioPlayer
             className="audioPlayer"
             style={{
-              width: "90%",
+              width: "95%",
               height: "10vh",
               color: "#353434",
             }}

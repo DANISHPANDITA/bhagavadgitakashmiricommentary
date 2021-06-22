@@ -71,16 +71,22 @@ function HomePage() {
       <center>
         <div className="homePage">
           <div className="centerHome">
-            <Fade bottom>
+            <Fade bottom duration={1500}>
               <div className="details">
-                <p>Shrimad Bhagavad-Gita (श्रीमदभगवद् गीता)</p>
-                <p>in Kashmiri (कॉशुर)</p>
-                <p>
-                  By - Sh. Bhushan Lal Ji Bhat <b>(Sharnagat)</b>
-                </p>
-                <center>
-                  <button onClick={goToMahatmya}>Click here.</button>
-                </center>
+                <Fade bottom delay={1000} duration={1500}>
+                  <p>Shrimad Bhagavad-Gita (श्रीमदभगवद् गीता)</p>
+                </Fade>
+                <Fade bottom delay={2000} duration={1500}>
+                  <p>in Kashmiri (कॉशुर)</p>
+                  <p>
+                    By - Sh. Bhushan Lal Ji Bhat <b>(Sharnagat)</b>
+                  </p>{" "}
+                </Fade>
+                <Fade bottom delay={3000} duration={1500}>
+                  <center>
+                    <button onClick={goToMahatmya}>Click here</button>
+                  </center>
+                </Fade>
               </div>
             </Fade>
           </div>

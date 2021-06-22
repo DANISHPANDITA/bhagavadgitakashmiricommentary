@@ -51,29 +51,40 @@ function Basics() {
           {Lang === true
             ? EngChapBasics.map((data) => {
                 return (
-                  <Fade bottom>
+                  <Fade bottom delay={1000} duration={1500}>
                     <center>
                       <div
                         id={data.chapter_number}
                         key={data.chapter_number}
                         className="Chapters">
-                        <h2>
-                          Chapter-{data.chapter_number}
-                          <Tooltip
-                            title={`Go to chapter ${data.chapter_number}`}>
-                            <DoubleArrowRounded
-                              className="gotodetail"
-                              onClick={() => {
-                                history.push(`/chapter/${data.chapter_number}`);
-                              }}
-                            />
-                          </Tooltip>
-                        </h2>
-                        <h3>
-                          {data.name} ({data.name_meaning})
-                        </h3>
-                        <h4>Number of Shlokas : {data.verses_count}</h4>
-                        <p>{data.chapter_summary}</p>
+                        <Fade bottom delay={1000} duration={1500}>
+                          <h2>
+                            Chapter-{data.chapter_number}
+                            <Tooltip
+                              title={`Go to chapter ${data.chapter_number}`}>
+                              <DoubleArrowRounded
+                                className="gotodetail"
+                                onClick={() => {
+                                  history.push(
+                                    `/chapter/${data.chapter_number}`
+                                  );
+                                }}
+                              />
+                            </Tooltip>
+                          </h2>
+                        </Fade>
+                        <Fade bottom delay={1000} duration={1500}>
+                          <h3>
+                            {data.name} ({data.name_meaning})
+                          </h3>
+                        </Fade>
+                        <Fade bottom delay={1000} duration={1500}>
+                          <h4>Number of Shlokas : {data.verses_count}</h4>
+                        </Fade>
+                        <Fade bottom delay={1000} duration={1500}>
+                          {" "}
+                          <p>{data.chapter_summary}</p>
+                        </Fade>
                       </div>
                     </center>
                   </Fade>
@@ -82,7 +93,7 @@ function Basics() {
             : HindiChapBasics.map((data) => {
                 return (
                   <center>
-                    <Fade bottom>
+                    <Fade bottom delay={1000} duration={1500}>
                       <div
                         id={data.chapter_number}
                         key={data.chapter_number}
