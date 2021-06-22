@@ -1,3 +1,5 @@
+/** @format */
+
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Basics from "./components/Basics";
@@ -19,8 +21,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/geetamahatmya">
-            {" "}
-            <GeetaMahatmya />{" "}
+            <GeetaMahatmya />
           </Route>
           <Route exact path="/table">
             <Table />

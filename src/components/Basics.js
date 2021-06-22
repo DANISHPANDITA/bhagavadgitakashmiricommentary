@@ -1,13 +1,15 @@
+/** @format */
+
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import "../styles/Basics.css";
 import indian from "indian-numbers";
 import { Link } from "react-router-dom";
 import { JumpCircleLoading } from "react-loadingg";
-import Zoom from "react-reveal/Zoom";
-import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import { DoubleArrowRounded } from "@material-ui/icons";
+import { Tooltip } from "@material-ui/core";
 
 function Basics() {
   const [EngChapBasics, setEngChapBasics] = useState([]);
@@ -15,9 +17,9 @@ function Basics() {
   const [Lang, setLang] = useState(true);
   const history = useHistory();
   const hindiDataURL =
-    "https://run.mocky.io/v3/4b7c2bd4-4704-4db6-96c1-858aba5e060d";
+    "https://run.mocky.io/v3/43f69f4d-213b-42c1-87f7-8f991bdbea95";
   const engDataURL =
-    "https://run.mocky.io/v3/dd6a1fda-fbc4-4272-9c93-72708b08a6f4";
+    "https://run.mocky.io/v3/a800d4de-965f-44c6-ab25-9003270af0bd";
 
   useEffect(() => {
     fetch(engDataURL)
@@ -37,33 +39,35 @@ function Basics() {
     return (
       <div className="basics">
         <center>
-          <Zoom top>
+          <Fade bottom>
             <div className="heading">
               <button className="ChangeLangButton" onClick={ChangeLanguage}>
                 English/Hindi
               </button>
             </div>
-          </Zoom>
+          </Fade>
         </center>
         <div className="chapters">
-          <Jump>
-            {Lang === true
-              ? EngChapBasics.map((data) => {
-                  return (
+          {Lang === true
+            ? EngChapBasics.map((data) => {
+                return (
+                  <Fade bottom>
                     <center>
                       <div
                         id={data.chapter_number}
                         key={data.chapter_number}
-                        className="Chapters"
-                      >
+                        className="Chapters">
                         <h2>
                           Chapter-{data.chapter_number}
-                          <DoubleArrowRounded
-                            className="gotodetail"
-                            onClick={() => {
-                              history.push(`/chapter/${data.chapter_number}`);
-                            }}
-                          />
+                          <Tooltip
+                            title={`Go to chapter ${data.chapter_number}`}>
+                            <DoubleArrowRounded
+                              className="gotodetail"
+                              onClick={() => {
+                                history.push(`/chapter/${data.chapter_number}`);
+                              }}
+                            />
+                          </Tooltip>
                         </h2>
                         <h3>
                           {data.name} ({data.name_meaning})
@@ -72,53 +76,57 @@ function Basics() {
                         <p>{data.chapter_summary}</p>
                       </div>
                     </center>
-                  );
-                })
-              : HindiChapBasics.map((data) => {
-                  return (
-                    <center>
+                  </Fade>
+                );
+              })
+            : HindiChapBasics.map((data) => {
+                return (
+                  <center>
+                    <Fade bottom>
                       <div
                         id={data.chapter_number}
                         key={data.chapter_number}
-                        className="Chapters"
-                      >
+                        className="Chapters">
                         <h2>
                           अध्याय-{data.chapter_number}
-                          <DoubleArrowRounded
-                            className="gotodetail"
-                            onClick={() => {
-                              indian.convert(
-                                data.chapter_number,
-                                "hindi",
-                                "english",
-                                function (err, res) {
-                                  if (err) {
-                                    alert(err);
-                                  } else {
-                                    history.push(`/chapter/${res}`);
+                          <Tooltip
+                            title={`Go to chapter ${data.chapter_number}`}>
+                            <DoubleArrowRounded
+                              className="gotodetail"
+                              onClick={() => {
+                                indian.convert(
+                                  data.chapter_number,
+                                  "hindi",
+                                  "english",
+                                  function (err, res) {
+                                    if (err) {
+                                      alert(err);
+                                    } else {
+                                      history.push(`/chapter/${res}`);
+                                    }
                                   }
-                                }
-                              );
-                            }}
-                          />
+                                );
+                              }}
+                            />
+                          </Tooltip>
                         </h2>
                         <h3>
                           {data.name} ({data.name_meaning})
                         </h3>
                         <h4>श्लोक संख्या : {data.verses_count}</h4>
                         <p>{data.chapter_summary}</p>
-                      </div>
-                    </center>
-                  );
-                })}{" "}
-          </Jump>
-        </div>{" "}
+                      </div>{" "}
+                    </Fade>
+                  </center>
+                );
+              })}
+        </div>
         <Slide bottom>
           <center>
             <Link to="/table">
               <button className="GlossaryButton">Glossary</button>
             </Link>
-          </center>{" "}
+          </center>
         </Slide>
       </div>
     );

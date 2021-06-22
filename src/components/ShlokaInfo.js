@@ -1,6 +1,9 @@
+/** @format */
+
 import React from "react";
 import "../styles/ShlokaInfo.css";
 import ReactAudioPlayer from "react-audio-player";
+
 function ShlokaInfo({
   number,
   text,

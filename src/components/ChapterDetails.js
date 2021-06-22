@@ -1,3 +1,5 @@
+/** @format */
+
 import indian from "indian-numbers";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
@@ -25,9 +27,9 @@ function ChapterDetails() {
   var engD = [];
   var HindiD = [];
   const engDataURL =
-    "https://run.mocky.io/v3/dd6a1fda-fbc4-4272-9c93-72708b08a6f4";
+    "https://run.mocky.io/v3/a800d4de-965f-44c6-ab25-9003270af0bd";
   const HindiDataURL =
-    "https://run.mocky.io/v3/4b7c2bd4-4704-4db6-96c1-858aba5e060d";
+    "https://run.mocky.io/v3/43f69f4d-213b-42c1-87f7-8f991bdbea95";
 
   useEffect(() => {
     fetch(engDataURL)
@@ -275,8 +277,7 @@ function ChapterDetails() {
             className="homeButton"
             onClick={() => {
               history.push("/");
-            }}
-          >
+            }}>
             Go to HomePage
           </button>
         </center>
