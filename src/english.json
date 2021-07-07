@@ -3792,7 +3792,7 @@
         "text": "स्वे स्वे कर्मण्यभिरत: संसिद्धिं लभते नर: |\nस्वकर्मनिरत: सिद्धिं यथा विन्दति तच्छृणु ॥45॥\n यत: प्रवृत्तिर्भूतानां येन सर्वमिदं ततम् |\n स्वकर्मणा तमभ्यर्च्य सिद्धिं विन्दति मानव: ॥46॥\n",
         "verse_number": "45-46",
         "word_meanings": "sve sve—respectively; karmaṇi—work; abhirataḥ—fulfilling; sansiddhim—perfection; labhate—achieve; naraḥ—a person; sva-karma—to one’s own prescribed duty; nirataḥ—engaged; siddhim—perfection; yathā—as; vindati—attains; tat—that; śhṛiṇu—hear\n yataḥ—from whom; pravṛittiḥ—have come into being; bhūtānām—of all living entities; yena—by whom; sarvam—all; idam—this; tatam—pervaded; sva-karmaṇā—by one’s natural occupation; tam—him; abhyarchya—by worshipping; siddhim—perfection; vindati—attains; mānavaḥ—a person\n",
-        "transliteration": "sve sve karmaṇy abhirataḥ sansiddhiṁ labhate naraḥ\nsva-karma-nirataḥ siddhiṁ yathā vindati tach chhṛiṇu\n yataḥ pravṛittir bhūtānāṁ yena sarvam idaṁ tatam\nsva-karmaṇā tam abhyarchya siddhiṁ vindati mānavaḥ\n" 
+        "transliteration": "sve sve karmaṇy abhirataḥ sansiddhiṁ labhate naraḥ\nsva-karma-nirataḥ siddhiṁ yathā vindati tach chhṛiṇu\n yataḥ pravṛittir bhūtānāṁ yena sarvam idaṁ tatam\nsva-karmaṇā tam abhyarchya siddhiṁ vindati mānavaḥ\n"
       },
       "47": {
         "meaning": "One's own duty, (though) defective, is superior to another's duty well performed. By performing a duty as dictated by one's own nature, one does not incur sin.",
@@ -3920,19 +3920,12 @@
         "word_meanings": "idam—this; te—by you; na—never; atapaskāya—to those who are not austere; na—never; abhaktāya—to those who are not devoted; kadāchana—at any time; na—never; cha—also; aśhuśhrūṣhave—to those who are averse to listening (to spiritual topics); vāchyam—to be spoken; na—never; cha—also; mām—toward me; yaḥ—who; abhyasūyati—those who are envious\n",
         "transliteration": "idaṁ te nātapaskyāya nābhaktāya kadāchana\nna chāśhuśhruṣhave vāchyaṁ na cha māṁ yo ‘bhyasūtayi\n"
       },
-      "68": {
-        "meaning": "He who, entertaining supreme devotion to Me, will speak of this highest secret, to My devotees will without doubt reach Me alone.",
-        "text": "य इदं परमं गुह्यं मद्भक्तेष्वभिधास्यति |\nभक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशय: ॥68॥\n",
-        "verse_number": "68",
-        "word_meanings": "yaḥ—who; idam—this; paramam—most; guhyam—confidential knowledge; mat-bhakteṣhu—amongst my devotees; abhidhāsyati—teaches; bhaktim—greatest act of love; mayi—to me; parām—transcendental; kṛitvā—doing; mām—to me; eva—certainly; eṣhyati—comes; asanśhayaḥ—without doubt\n",
-        "transliteration": "ya idaṁ paramaṁ guhyaṁ mad-bhakteṣhv abhidhāsyati\nbhaktiṁ mayi parāṁ kṛitvā mām evaiṣhyaty asanśhayaḥ\n"
-      },
-      "69": {
-        "meaning": "And as compared with him, none else among human beings is the best accomplisher of what is dear to Me. Moreover, nor will there be anyone else in the world dearer to Me than he.",
-        "text": "न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तम: |\nभविता न च मे तस्मादन्य: प्रियतरो भुवि ॥69॥\n",
-        "verse_number": "69",
-        "word_meanings": "na—no; cha—and; tasmāt—than them; manuṣhyeṣhu—amongst human beings; kaśhchit—anyone; me—to me; priya-kṛit-tamaḥ—more dear; bhavitā—will be; na—never; cha—and; me—to me; tasmāt—than them; anyaḥ—another; priya-taraḥ—dearer; bhuvi—on this earth\n",
-        "transliteration": "na cha tasmān manuṣhyeṣhu kaśhchin me priya-kṛittamaḥ\nbhavitā na cha me tasmād anyaḥ priyataro bhuvi\n"
+      "68-69": {
+        "meaning": "He who, entertaining supreme devotion to Me, will speak of this highest secret, to My devotees will without doubt reach Me alone. And as compared with him, none else among human beings is the best accomplisher of what is dear to Me. Moreover, nor will there be anyone else in the world dearer to Me than he.",
+        "text": "य इदं परमं गुह्यं मद्भक्तेष्वभिधास्यति |\nभक्तिं मयि परां कृत्वा मामेवैष्यत्यसंशय: ॥68॥\n न च तस्मान्मनुष्येषु कश्चिन्मे प्रियकृत्तम: |\nभविता न च मे तस्मादन्य: प्रियतरो भुवि ॥69॥\n",
+        "verse_number": "68-69",
+        "word_meanings": "yaḥ—who; idam—this; paramam—most; guhyam—confidential knowledge; mat-bhakteṣhu—amongst my devotees; abhidhāsyati—teaches; bhaktim—greatest act of love; mayi—to me; parām—transcendental; kṛitvā—doing; mām—to me; eva—certainly; eṣhyati—comes; asanśhayaḥ—without doubt\n na—no; cha—and; tasmāt—than them; manuṣhyeṣhu—amongst human beings; kaśhchit—anyone; me—to me; priya-kṛit-tamaḥ—more dear; bhavitā—will be; na—never; cha—and; me—to me; tasmāt—than them; anyaḥ—another; priya-taraḥ—dearer; bhuvi—on this earth\n",
+        "transliteration": "ya idaṁ paramaṁ guhyaṁ mad-bhakteṣhv abhidhāsyati\nbhaktiṁ mayi parāṁ kṛitvā mām evaiṣhyaty asanśhayaḥ\n na cha tasmān manuṣhyeṣhu kaśhchin me priya-kṛittamaḥ\nbhavitā na cha me tasmād anyaḥ priyataro bhuvi\n"
       },
       "70": {
         "meaning": "And he who will study this sacred conversation between us two, which is conducive to virtue, by him I shall be adored through the Sacrifice in the form of Knowledge. This is My judgement.",
@@ -3941,19 +3934,12 @@
         "word_meanings": "adhyeṣhyate—study; cha—and; yaḥ—who; imam—this; dharmyam—sacred; saṁvādam—dialogue; āvayoḥ—of ours; jñāna—of knowledge; yajñena-tena—through the sacrifice of knowledge; aham—I; iṣhṭaḥ—worshipped; syām—shall be; iti—such; me—my; matiḥ—opinion\n",
         "transliteration": "adhyeṣhyate cha ya imaṁ dharmyaṁ saṁvādam āvayoḥ\njñāna-yajñena tenāham iṣhṭaḥ syām iti me matiḥ\n"
       },
-      "71": {
-        "meaning": "Any man who, being reverential and free from cavilling, might even hear (this), he too, becoming free, shall attain the blessed worlds of those who perform virtuous deeds.",
-        "text": "श्रद्धावाननसूयश्च शृणुयादपि यो नर: |\nसोऽपि मुक्त: शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम् ॥71॥\n",
-        "verse_number": "71",
-        "word_meanings": "śhraddhā-vān—faithful; anasūyaḥ—without envy; cha—and; śhṛiṇuyāt—listen; api—certainly; yaḥ—who; naraḥ—a person; saḥ—that person; api—also; muktaḥ—liberated; śhubhān—the auspicious; lokān—abodes; prāpnuyāt—attain; puṇya-karmaṇām—of the pious\n",
-        "transliteration": "śhraddhāvān anasūyaśh cha śhṛiṇuyād api yo naraḥ\nso ‘pi muktaḥ śhubhāl lokān prāpnuyāt puṇya-karmaṇām\n"
-      },
-      "72": {
-        "meaning": "O Partha, has this been listened to by you with a one-pointed mind? O Dhananjaya, has your delusion caused by ignorance been destroyed?",
-        "text": "कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा |\nकच्चिदज्ञानसम्मोह: प्रनष्टस्ते धनञ्जय ॥72॥\n",
-        "verse_number": "72",
-        "word_meanings": "kachchit—whether; etat—this; śhrutam—heard; pārtha—Arjun, the son of Pritha; tvayā—by you; eka-agreṇa chetasā—with a concentrated mind; kachchit—whether; ajñāna—ignorance; sammohaḥ—delusion; pranaṣhṭaḥ—destroyed; te—your; dhanañjaya—Arjun, conqueror of wealth\n",
-        "transliteration": "kachchid etach chhrutaṁ pārtha tvayaikāgreṇa chetasā\nkachchid ajñāna-sammohaḥ pranaṣhṭas te dhanañjaya\n"
+      "71-72": {
+        "meaning": "Any man who, being reverential and free from cavilling, might even hear (this), he too, becoming free, shall attain the blessed worlds of those who perform virtuous deeds. O Partha, has this been listened to by you with a one-pointed mind? O Dhananjaya, has your delusion caused by ignorance been destroyed?",
+        "text": "श्रद्धावाननसूयश्च शृणुयादपि यो नर: |\nसोऽपि मुक्त: शुभाँल्लोकान्प्राप्नुयात्पुण्यकर्मणाम् ॥71॥\n कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा |\nकच्चिदज्ञानसम्मोह: प्रनष्टस्ते धनञ्जय ॥72॥\n",
+        "verse_number": "71-72",
+        "word_meanings": "śhraddhā-vān—faithful; anasūyaḥ—without envy; cha—and; śhṛiṇuyāt—listen; api—certainly; yaḥ—who; naraḥ—a person; saḥ—that person; api—also; muktaḥ—liberated; śhubhān—the auspicious; lokān—abodes; prāpnuyāt—attain; puṇya-karmaṇām—of the pious\n kachchit—whether; etat—this; śhrutam—heard; pārtha—Arjun, the son of Pritha; tvayā—by you; eka-agreṇa chetasā—with a concentrated mind; kachchit—whether; ajñāna—ignorance; sammohaḥ—delusion; pranaṣhṭaḥ—destroyed; te—your; dhanañjaya—Arjun, conqueror of wealth\n",
+        "transliteration": "śhraddhāvān anasūyaśh cha śhṛiṇuyād api yo naraḥ\nso ‘pi muktaḥ śhubhāl lokān prāpnuyāt puṇya-karmaṇām\n kachchid etach chhrutaṁ pārtha tvayaikāgreṇa chetasā\nkachchid ajñāna-sammohaḥ pranaṣhṭas te dhanañjaya\n"
       },
       "73": {
         "meaning": "Arjuna said: O Acyuta, (my) delusion has been destroyed and memory has been retained by me through Your grace. I stand with my doubt removed; I shall follow Your instruction.",
@@ -3962,33 +3948,19 @@
         "word_meanings": "arjunaḥ uvācha—Arjun said; naṣhṭaḥ—dispelled; mohaḥ—illusion; smṛitiḥ—memory; labdhā—regained; tvat-prasādāt—by your grace; mayā—by me; achyuta—Shree Krishna, the infallible one; sthitaḥ—situated; asmi—I am; gata-sandehaḥ—free from doubts; kariṣhye—I shall act; vachanam—instructions; tava—your\n",
         "transliteration": "arjuna uvācha\nnaṣhṭo mohaḥ smṛitir labdhā tvat-prasādān mayāchyuta\nsthito ‘smi gata-sandehaḥ kariṣhye vachanaṁ tava\n"
       },
-      "74": {
-        "meaning": "Sanjaya said: I thus heard this conversation of Vasudeva and of the great-souled Partha, which is unique and makes one's hair stand on end.",
-        "text": "सञ्जय उवाच |\nइत्यहं वासुदेवस्य पार्थस्य च महात्मन: |\nसंवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥74॥\n",
-        "verse_number": "74",
-        "word_meanings": "sañjayaḥ uvācha—Sanjay said; iti—thus; aham—I; vāsudevasya—of Shree Krishna; pārthasya—Arjun; cha—and; mahā-ātmanaḥ—the noble hearted soul; saṁvādam—conversation; imam—this; aśhrauṣham—have heard; adbhutam—wonderful; roma-harṣhaṇam—which causes the hair to stand on end\n",
-        "transliteration": "sañjaya uvācha\nity ahaṁ vāsudevasya pārthasya cha mahātmanaḥ\nsaṁvādam imam aśhrauṣham adbhutaṁ roma-harṣhaṇam\n"
+      "74-75": {
+        "meaning": "Sanjaya said: I thus heard this conversation of Vasudeva and of the great-souled Partha, which is unique and makes one's hair stand on end. Through the favour of Vyasa I heard this secret concerning the supreme Yoga from Krsna, the Lord of yogas, while He Himself was actually speaking!",
+        "text": "सञ्जय उवाच |\nइत्यहं वासुदेवस्य पार्थस्य च महात्मन: |\nसंवादमिममश्रौषमद्भुतं रोमहर्षणम् ॥74॥\n व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम् |\nयोगं योगेश्वरात्कृष्णात्साक्षात्कथयत: स्वयम् ॥75॥\n",
+        "verse_number": "74-75",
+        "word_meanings": "sañjayaḥ uvācha—Sanjay said; iti—thus; aham—I; vāsudevasya—of Shree Krishna; pārthasya—Arjun; cha—and; mahā-ātmanaḥ—the noble hearted soul; saṁvādam—conversation; imam—this; aśhrauṣham—have heard; adbhutam—wonderful; roma-harṣhaṇam—which causes the hair to stand on end\n vyāsa-prasādāt—by the grace of Ved Vyas; śhrutavān—have heard; etat—this; guhyam—secret; aham—I; param—supreme; yogam—Yog; yoga-īśhvarāt—from the Lod of Yog; kṛiṣhṇāt—from Shree Krishna; sākṣhāt—directly; kathayataḥ—speaking; svayam—himself\n",
+        "transliteration": "sañjaya uvācha\nity ahaṁ vāsudevasya pārthasya cha mahātmanaḥ\nsaṁvādam imam aśhrauṣham adbhutaṁ roma-harṣhaṇam\n vyāsa-prasādāch chhrutavān etad guhyam ahaṁ param\nyogaṁ yogeśhvarāt kṛiṣhṇāt sākṣhāt kathayataḥ svayam\n"
       },
-      "75": {
-        "meaning": "Through the favour of Vyasa I heard this secret concerning the supreme Yoga from Krsna, the Lord of yogas, while He Himself was actually speaking!",
-        "text": "व्यासप्रसादाच्छ्रुतवानेतद्गुह्यमहं परम् |\nयोगं योगेश्वरात्कृष्णात्साक्षात्कथयत: स्वयम् ॥75॥\n",
-        "verse_number": "75",
-        "word_meanings": "vyāsa-prasādāt—by the grace of Ved Vyas; śhrutavān—have heard; etat—this; guhyam—secret; aham—I; param—supreme; yogam—Yog; yoga-īśhvarāt—from the Lod of Yog; kṛiṣhṇāt—from Shree Krishna; sākṣhāt—directly; kathayataḥ—speaking; svayam—himself\n",
-        "transliteration": "vyāsa-prasādāch chhrutavān etad guhyam ahaṁ param\nyogaṁ yogeśhvarāt kṛiṣhṇāt sākṣhāt kathayataḥ svayam\n"
-      },
-      "76": {
-        "meaning": "And, O king, while repeatedly remembering this unique, sacred dialogue between Kesava and Arjuna, I rejoice every moment.",
-        "text": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम् |\nकेशवार्जुनयो: पुण्यं हृष्यामि च मुहुर्मुहु: ॥76॥\n",
-        "verse_number": "76",
-        "word_meanings": "rājan—King; sansmṛitya saṁsmṛitya—repeatedly recalling; saṁvādam—dialogue; imam—this; adbhutam—astonishing; keśhava-arjunayoḥ—between Lord Shree Krishna and Arjun; puṇyam—pious; hṛiṣhyāmi—I rejoice; cha—and; muhuḥ muhuḥ—repeatedly\n",
-        "transliteration": "rājan sansmṛitya sansmṛitya saṁvādam imam adbhutam\nkeśhavārjunayoḥ puṇyaṁ hṛiṣhyāmi cha muhur muhuḥ\n"
-      },
-      "77": {
-        "meaning": "O king, repeatedly recollecting that greatly extraordinary form of Hari, I am struck with wonder. And I rejoice again and again.",
-        "text": "तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरे: |\nविस्मयो मे महानराजन्हृष्यामि च पुन: पुन: ॥77॥\n",
-        "verse_number": "77",
-        "word_meanings": "tat—that; cha—and; sansmṛitya saṁsmṛitya—remembering repeatedly; rūpam—cosmic form; ati—most; adbhutam—wonderful; hareḥ—of Lord Krishna; vismayaḥ—astonishment; me—my; mahān—great; rājan—King; hṛiṣhyāmi—I am thrilled with joy; cha—and; punaḥ punaḥ—over and over again\n",
-        "transliteration": "tach cha sansmṛitya saṁsmṛitya rūpam aty-adbhutaṁ hareḥ\nvismayo ye mahān rājan hṛiṣhyāmi cha punaḥ punaḥ\n"
+      "76-77": {
+        "meaning": "And, O king, while repeatedly remembering this unique, sacred dialogue between Kesava and Arjuna, I rejoice every moment. O king, repeatedly recollecting that greatly extraordinary form of Hari, I am struck with wonder. And I rejoice again and again.",
+        "text": "राजन्संस्मृत्य संस्मृत्य संवादमिममद्भुतम् |\nकेशवार्जुनयो: पुण्यं हृष्यामि च मुहुर्मुहु: ॥76॥\n तच्च संस्मृत्य संस्मृत्य रूपमत्यद्भुतं हरे: |\nविस्मयो मे महानराजन्हृष्यामि च पुन: पुन: ॥77॥\n",
+        "verse_number": "76-77",
+        "word_meanings": "rājan—King; sansmṛitya saṁsmṛitya—repeatedly recalling; saṁvādam—dialogue; imam—this; adbhutam—astonishing; keśhava-arjunayoḥ—between Lord Shree Krishna and Arjun; puṇyam—pious; hṛiṣhyāmi—I rejoice; cha—and; muhuḥ muhuḥ—repeatedly\n tat—that; cha—and; sansmṛitya saṁsmṛitya—remembering repeatedly; rūpam—cosmic form; ati—most; adbhutam—wonderful; hareḥ—of Lord Krishna; vismayaḥ—astonishment; me—my; mahān—great; rājan—King; hṛiṣhyāmi—I am thrilled with joy; cha—and; punaḥ punaḥ—over and over again\n",
+        "transliteration": "rājan sansmṛitya sansmṛitya saṁvādam imam adbhutam\nkeśhavārjunayoḥ puṇyaṁ hṛiṣhyāmi cha muhur muhuḥ\n tach cha sansmṛitya saṁsmṛitya rūpam aty-adbhutaṁ hareḥ\nvismayo ye mahān rājan hṛiṣhyāmi cha punaḥ punaḥ\n"
       },
       "78": {
         "meaning": "Where there is Krsna, the Lord of yogas, and where there is Partha, the wielder of the bow, there are fortune, victory, prosperity and unfailing prudence. Such is my conviction.",

@@ -27,9 +27,9 @@ function ChapterDetails() {
   var engD = [];
   var HindiD = [];
   const engDataURL =
-    "https://run.mocky.io/v3/a800d4de-965f-44c6-ab25-9003270af0bd";
+    "https://run.mocky.io/v3/92b462e0-4c57-4aa2-b616-2edab5f3d547";
   const HindiDataURL =
-    "https://run.mocky.io/v3/43f69f4d-213b-42c1-87f7-8f991bdbea95";
+    "https://run.mocky.io/v3/a6f09537-1ecb-4142-96cd-499119e39953";
 
   useEffect(() => {
     fetch(engDataURL)
