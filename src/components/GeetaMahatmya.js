@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState, useEffect } from "react";
 import "../styles/GeetaMahatmya.css";
 import { db } from "../firebase/firebase";
@@ -21,6 +23,7 @@ function GeetaMahatmya() {
         )
       );
   }, []);
+  const gotoShlokaArry = [1, 2, 3, 4, 5, 6, 7];
   if (mahaytmyaState) {
     return (
       <div className="geetaMahatmya">
@@ -30,7 +33,10 @@ function GeetaMahatmya() {
               <div className="mahatmyaheadingtop">
                 <div className="mahatmyaHeading">
                   <p>Shrimad BhagavadGeeta Mahatmya</p>
-                  <p> (श्रीमद भगवद-गीता माहात्म्यं)</p>
+                  <p className="geetaMahatmyaHindiData">
+                    {" "}
+                    (श्रीमद भगवद-गीता माहात्म्यं)
+                  </p>
                 </div>
                 <Link style={{ textDecoration: "none" }} to="/basics">
                   <h2 className="goToChapters">Go to Chapters</h2>
@@ -40,41 +46,13 @@ function GeetaMahatmya() {
                 <tbody>
                   <tr>
                     <td className="gotoshlokatitle">Go to Shloka</td>
-                    <td>
-                      <a className="linkMahamtmya" href="#1">
-                        1
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#2">
-                        2
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#3">
-                        3
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#4">
-                        4
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#5">
-                        5
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#6">
-                        6
-                      </a>
-                    </td>
-                    <td>
-                      <a className="linkMahamtmya" href="#7">
-                        7
-                      </a>
-                    </td>
+                    {gotoShlokaArry.map((number) => (
+                      <td>
+                        <a className="linkMahamtmya" href={`#${number}`}>
+                          {number}
+                        </a>
+                      </td>
+                    ))}
                   </tr>
                 </tbody>
               </table>
@@ -87,12 +65,43 @@ function GeetaMahatmya() {
                   <div
                     id={shlok.shloka.Number}
                     key={shlok.shloka.Number}
-                    className="mahatmyaShloka"
-                  >
-                    <h2>Shloka (श्लोक) - {shlok.shloka.Number}</h2>
-                    <p>{shlok.shloka.Hindi}</p>
-                    <p>{shlok.shloka["Hindi-Meaning"]}</p>
-                    <p>{shlok.shloka.English}</p>
+                    className="mahatmyaShloka">
+                    <h2>
+                      Shloka{" "}
+                      <span
+                        id="mahatmyaShloka"
+                        className="geetaMahatmyaHindiData">
+                        (श्लोक)
+                      </span>{" "}
+                      - {shlok.shloka.Number}
+                    </h2>
+                    <p className="geetaMahatmyaHindiData">
+                      {shlok.shloka.Hindi.slice(
+                        0,
+                        shlok.shloka.Hindi.indexOf("|")
+                      )}
+                    </p>
+                    <p className="geetaMahatmyaHindiData">
+                      {shlok.shloka.Hindi.slice(
+                        shlok.shloka.Hindi.indexOf("|") + 1,
+                        shlok.shloka.Hindi.length
+                      )}
+                    </p>
+                    <p className="geetaMahatmyaHindiData">
+                      {shlok.shloka["Hindi-Meaning"]}
+                    </p>
+                    <p>
+                      {shlok.shloka.English.slice(
+                        0,
+                        shlok.shloka.English.indexOf("|")
+                      )}
+                    </p>
+                    <p>
+                      {shlok.shloka.English.slice(
+                        shlok.shloka.English.indexOf("|") + 1,
+                        shlok.shloka.English.length
+                      )}
+                    </p>
                     <p>{shlok.shloka["English-Meaning"]}</p>
                   </div>
                 );
@@ -112,8 +121,7 @@ function GeetaMahatmya() {
             className="changeMahatmyaState"
             onClick={() => {
               setMahaytmyaState(true);
-            }}
-          >
+            }}>
             See Mahatmya Shlokas
           </button>
           <Link style={{ textDecoration: "none" }} to="/basics">

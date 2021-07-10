@@ -1,3 +1,5 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Poppins:wght@500&display=swap");
 .noShlokaPage {
   height: 100vh;
   background: url(../img/mahatmyaBackground.jpg);
@@ -18,20 +20,21 @@
   overflow: auto;
 }
 .goToChapters {
+  transition: ease-in-out 250ms;
   margin-right: 5vw;
   margin-left: -15vw;
   background-color: rgb(255, 252, 96);
-  font-family: -apple-system;
+  font-family: "Balsamiq Sans", cursive;
   padding: 1vw 1.7vw 1vw 1.7vw;
   border-radius: 0.9vw;
 }
 
 .noShlokas {
-  margin-top: 30vh;
+  margin-top: 60vh;
   border-radius: 1.1vw;
   margin-left: auto;
   margin-right: auto;
-  width: 45vw;
+  width: 55vw;
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -72,7 +75,7 @@
     #ffdb60
   );
   border: 1px solid grey;
-  font-family: "Times New Roman";
+  font-family: "Balsamiq Sans", cursive;
   font-weight: 600;
   font-size: 1.2em;
   border-radius: 0.9vw;
@@ -99,6 +102,7 @@
   transition: ease-in-out 250ms;
 }
 .gotochaptersdirect {
+  font-family: "Balsamiq Sans", cursive;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2em;
@@ -110,7 +114,7 @@
 .gotoshlokatitle {
   color: rgb(16, 28, 95);
   font-weight: 700;
-  font-family: "Lucida Sans";
+  font-family: "Balsamiq Sans", cursive;
 }
 .mahatmyaTop table,
 td {
@@ -123,7 +127,7 @@ td {
   font-weight: 750;
 }
 .goToChapters:hover {
-  transition: ease-in-out 250ms;
+  text-decoration: underline;
   background-color: rgb(255, 208, 121);
   color: blue;
 }
@@ -138,6 +142,9 @@ td {
   color: rgb(204, 43, 21);
   transition: ease-in-out 250ms;
 }
+.geetaMahatmyaHindiData {
+  font-family: "Poppins", sans-serif !important;
+}
 .mahatmyaHeading {
   margin-left: auto;
   margin-right: auto;
@@ -148,7 +155,7 @@ td {
   padding: 0.7vw 0.8vw 0.3vw 0.8vw;
   color: rgba(1, 1, 102, 0.856);
   font-weight: 600;
-  font-family: monospace;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 2.5em;
   background: rgb(255, 200, 97);
   border-radius: 0.9vw;
@@ -180,23 +187,25 @@ td {
   padding: 1vh 0.5vh 1vh 0.5vh;
 }
 .mahatmyaShloka h2 {
-  font-family: "Times-New-Roman";
+  font-family: "Balsamiq Sans", cursive !important;
   margin-bottom: 1vh;
 }
 
 .mahatmyaShloka p:nth-child(4) {
   margin-top: 1.5vh;
 }
-.mahatmyaShloka p:nth-child(3),
-p:nth-child(5) {
+.mahatmyaShloka p:nth-child(4),
+.mahatmyaShloka p:nth-child(7) {
   text-align: justify;
 }
 .mahatmyaShloka p:nth-child(2),
-p:nth-child(4) {
+.mahatmyaShloka p:nth-child(3),
+.mahatmyaShloka p:nth-child(5),
+.mahatmyaShloka p:nth-child(6) {
   font-weight: 650;
 }
 .mahatmyaShloka p {
-  font-family: "Times New Roman";
+  font-family: "Balsamiq Sans", cursive;
   font-size: 1.7vw;
 }
 .mahatmyaShloka:nth-child(7) {

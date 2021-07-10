@@ -29,10 +29,19 @@ function HomePage() {
             <Fade bottom duration={1500}>
               <div className="details">
                 <Fade bottom delay={1000} duration={1500}>
-                  <p>Shrimad Bhagavad-Gita (श्रीमदभगवद् गीता)</p>
+                  <p>
+                    Shrimad Bhagavad-Gita{" "}
+                    <span className="hindiHomeDetail">
+                      {" "}
+                      (श्रीमद भगवद् गीता){" "}
+                    </span>
+                  </p>
                 </Fade>
                 <Fade bottom delay={2000} duration={1500}>
-                  <p>in Kashmiri (कॉशुर)</p>
+                  <p>
+                    in Kashmiri{" "}
+                    <span className="hindiHomeDetail"> (कॉशुर)</span>
+                  </p>
                   <p>
                     By - Sh. Bhushan Lal Ji Bhat <b>(Sharnagat)</b>
                   </p>{" "}

@@ -98,7 +98,7 @@ function Basics() {
                         id={data.chapter_number}
                         key={data.chapter_number}
                         className="Chapters">
-                        <h2>
+                        <h2 className="hindiData">
                           अध्याय-{data.chapter_number}
                           <Tooltip
                             title={`Go to chapter ${data.chapter_number}`}>
@@ -121,11 +121,13 @@ function Basics() {
                             />
                           </Tooltip>
                         </h2>
-                        <h3>
+                        <h3 className="hindiData">
                           {data.name} ({data.name_meaning})
                         </h3>
-                        <h4>श्लोक संख्या : {data.verses_count}</h4>
-                        <p>{data.chapter_summary}</p>
+                        <h4 className="hindiData">
+                          श्लोक संख्या : {data.verses_count}
+                        </h4>
+                        <p className="hindiData">{data.chapter_summary}</p>
                       </div>{" "}
                     </Fade>
                   </center>

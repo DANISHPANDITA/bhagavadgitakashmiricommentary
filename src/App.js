@@ -35,6 +35,9 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
+          <Route exact path="*">
+            <p style={{ fontFamily: "sans-serif" }}>Cannot reach the path</p>
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

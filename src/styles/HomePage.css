@@ -1,5 +1,5 @@
 /** @format */
-
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kalam&display=swap");
 body {
   background-color: #ccb866;
 }
@@ -15,9 +15,12 @@ body {
     rgba(255, 255, 255, 0.692) 0px 8px 24px,
     rgba(255, 255, 255, 0.692) 0px 16px 24px;
 }
+.hindiHomeDetail {
+  font-family: "Kalam", cursive;
+}
 .centerHome {
   margin: 0 auto 0 auto;
-  width: 40vw;
+  width: 45vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +39,7 @@ body {
   opacity: 0.75;
 }
 .details p {
-  font-family: fantasy;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 1.7em;
   margin-bottom: 4vh;
   font-weight: 800;
@@ -53,27 +56,29 @@ body {
 .details button {
   width: 80%;
   height: 5vh;
-  background-color: rgb(57, 57, 100);
+  background-color: rgb(128, 128, 180);
   border-radius: 0.9vw;
   border: none;
   outline: none;
-  font-family: sans-serif;
+  font-family: "Balsamiq Sans", cursive;
   font-size: 1.3em;
   font-weight: 800;
-  margin-bottom: 3vh;
+  margin-bottom: 0.5vh;
   transition: ease-in-out 300ms;
 }
 .centerHome button:hover {
   cursor: pointer;
-  background-color: rgb(11, 11, 88);
+  background-color: rgb(151, 95, 255);
   color: white;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .centerHome {
     width: 80vw;
+    border-radius: 1.1vw;
   }
   .centerHome button {
     width: 50vw;
+    border-radius: 1.3vw;
   }
   .details {
     margin-top: 55vh;

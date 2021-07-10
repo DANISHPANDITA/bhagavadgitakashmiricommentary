@@ -1,5 +1,5 @@
 /** @format */
-
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Yatra+One&display=swap");
 .basics {
   background-color: #fff5df;
 }
@@ -16,14 +16,17 @@
   margin-top: 3vh;
   border-radius: 0.9vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: monospace;
+  font-family: "Akaya Kanadaka", cursive;
 }
 .Chapters p {
-  text-shadow: 2px 2px 4px #928f8f;
-  font-size: 1.7vw;
+  text-shadow: 1px 1px 2px #928f8f;
+  font-size: 1.9vw;
   font-weight: 500;
   text-align: justify;
   margin-bottom: 1vh;
+}
+.hindiData {
+  font-family: "Yatra One", cursive !important;
 }
 .Chapters h3 {
   margin: 0.5vh;
