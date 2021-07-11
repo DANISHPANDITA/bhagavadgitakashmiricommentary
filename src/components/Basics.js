@@ -14,10 +14,7 @@ function Basics() {
   const [HindiChapBasics, setHindiChapBasics] = useState([]);
   const [Lang, setLang] = useState(true);
   const history = useHistory();
-  const hindiDataURL =
-    "https://run.mocky.io/v3/a6f09537-1ecb-4142-96cd-499119e39953";
-  const engDataURL =
-    "https://run.mocky.io/v3/92b462e0-4c57-4aa2-b616-2edab5f3d547";
+ 
 
   useEffect(() => {
     fetch(engDataURL)
