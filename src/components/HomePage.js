@@ -17,6 +17,7 @@ function HomePage() {
     ).then((res) => setBackState(res.ok));
   }, []);
   useEffect(() => {
+    alert("Going to a particular Shloka through URL has been disabled.");
     dispatch(resetShlokaData());
   }, [dispatch]);
   const goToMahatmya = () => {

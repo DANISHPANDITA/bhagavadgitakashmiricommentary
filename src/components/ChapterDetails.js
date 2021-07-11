@@ -32,7 +32,7 @@ function ChapterDetails() {
     "https://run.mocky.io/v3/a6f09537-1ecb-4142-96cd-499119e39953";
 
   useEffect(() => {
-    alert("Going to a particular Shloka through URL has been disabled.");
+    
     fetch(engDataURL)
       .then((res) => res.json())
       .then((data) =>
