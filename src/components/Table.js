@@ -4,10 +4,7 @@ import Transliterator from "libindic-transliteration";
 import { PassThrouthLoading } from "react-loadingg";
 function Table() {
   const [tableData, setTableData] = useState({});
-  const TableURI =
-    "https://run.mocky.io/v3/da7fa2e9-dc24-4b98-9449-76f571cb4d19";
-
-  useEffect(() => {
+   useEffect(() => {
     fetch(TableURI)
       .then((res) => res.json())
       .then((data) => setTableData(data));
