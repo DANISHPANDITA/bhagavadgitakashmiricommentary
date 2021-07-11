@@ -2,63 +2,52 @@
 
 import React from "react";
 import "../styles/ShlokaInfo.css";
-import ReactAudioPlayer from "react-audio-player";
-
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToShlokaData } from "../redux/slice";
 function ShlokaInfo({
   number,
+  transliteration,
   text,
   hindiNumber,
+  englishMeaning,
   hindiWordsMeanings,
   hindiMeaning,
   mp3,
-  noComm,
+  chapterNo,
 }) {
-  document.addEventListener(
-    "play",
-    function (e) {
-      var audios = document.getElementsByClassName("audioPlayer");
-      for (var i = 0, len = audios.length; i < len; i++) {
-        if (audios[i] !== e.target) {
-          audios[i].pause();
-        }
-      }
-    },
-    true
-  );
-
+  const history = useHistory();
+  const dispatch = useDispatch();
+  const ShlokaText = (t) => {
+    const newText = t.split("\n").map((str) => <p className="text">{str}</p>);
+    return newText;
+  };
+  const goToShlok = (e) => {
+    dispatch(
+      addToShlokaData({
+        chapterNo: chapterNo,
+        ShlokaNumber: number,
+        text: text,
+        noInHindi: hindiNumber,
+        meaning: hindiMeaning,
+        englishMeaning: englishMeaning,
+        songUrl: mp3,
+        transliteration: transliteration,
+        hindiWordsMeanings: hindiWordsMeanings,
+      })
+    );
+    history.push(`/chapter/${chapterNo}/verse/${number}`);
+  };
   return (
     <center>
       <div className="ShlokaInfo">
-        <h2>
-          {number} ({hindiNumber})
-        </h2>
-        <p className="text">{text}</p>
-        <p className="wordMeaning">
-          <span className="bolderText">शब्दार्थ</span> {hindiWordsMeanings}
-        </p>
+        <h2 onClick={goToShlok}>{number}</h2>
+        {ShlokaText(text)}
+
         <p className="meaning">
           <span className="bolderText">अनुवाद</span>
           {hindiMeaning}
         </p>
-        <p className="meaning">
-          <span className="commentaryTitle">Commentary in Kashmiri</span>
-        </p>
-        {!noComm ? (
-          <ReactAudioPlayer
-            className="audioPlayer"
-            style={{
-              width: "95%",
-              height: "10vh",
-              color: "#353434",
-            }}
-            src={mp3}
-            autoPlay={false}
-            controls
-            controlsList="nodownload"
-          />
-        ) : (
-          <h2 style={{ fontFamily: "monospace" }}>{noComm}</h2>
-        )}
       </div>
     </center>
   );

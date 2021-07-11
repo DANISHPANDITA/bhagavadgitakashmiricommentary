@@ -23,6 +23,10 @@ function GeetaMahatmya() {
         )
       );
   }, []);
+  const ShlokaText = (t) => {
+    const newText = t.split("\n").map((str) => <p>{str}</p>);
+    return newText;
+  };
   const gotoShlokaArry = [1, 2, 3, 4, 5, 6, 7];
   if (mahaytmyaState) {
     return (
@@ -76,32 +80,12 @@ function GeetaMahatmya() {
                       - {shlok.shloka.Number}
                     </h2>
                     <p className="geetaMahatmyaHindiData">
-                      {shlok.shloka.Hindi.slice(
-                        0,
-                        shlok.shloka.Hindi.indexOf("|")
-                      )}
-                    </p>
-                    <p className="geetaMahatmyaHindiData">
-                      {shlok.shloka.Hindi.slice(
-                        shlok.shloka.Hindi.indexOf("|") + 1,
-                        shlok.shloka.Hindi.length
-                      )}
+                      {ShlokaText(shlok.shloka.Hindi)}
                     </p>
                     <p className="geetaMahatmyaHindiData">
                       {shlok.shloka["Hindi-Meaning"]}
                     </p>
-                    <p>
-                      {shlok.shloka.English.slice(
-                        0,
-                        shlok.shloka.English.indexOf("|")
-                      )}
-                    </p>
-                    <p>
-                      {shlok.shloka.English.slice(
-                        shlok.shloka.English.indexOf("|") + 1,
-                        shlok.shloka.English.length
-                      )}
-                    </p>
+                    <p>{ShlokaText(shlok.shloka.English)}</p>
                     <p>{shlok.shloka["English-Meaning"]}</p>
                   </div>
                 );

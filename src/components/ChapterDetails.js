@@ -149,8 +149,11 @@ function ChapterDetails() {
       x.push(q[1].verse_number);
     }
   }
+
   const newX = [];
-  while (x.length) newX.push(x.splice(0, 8));
+  while (x.length) {
+    newX.push(x.splice(0, 8));
+  }
 
   return (
     <div className="chapter">
@@ -240,12 +243,18 @@ function ChapterDetails() {
               if (hindi) {
                 if (URLshlok) {
                   return (
-                    <div className="shlokaDet" id={shlok[1].verse_number}>
+                    <div
+                      className="shlokaDet"
+                      key={shlok[1].verse_number}
+                      id={shlok[1].verse_number}>
                       <ShlokaInfo
+                        chapterNo={chapterNo.chapterNo}
+                        englishMeaning={shlok[1].meaning}
                         key={shlok[1].verse_number}
                         number={shlok[1].verse_number}
                         hindiNumber={hindi[1].verse_number}
                         hindiWordsMeanings={hindi[1].word_meanings}
+                        transliteration={shlok[1].transliteration}
                         text={shlok[1].text}
                         hindiMeaning={hindi[1].meaning}
                         mp3={URLshlok.Shloka}

@@ -6,16 +6,17 @@ import Basics from "./components/Basics";
 import ChapterDetails from "./components/ChapterDetails";
 import GeetaMahatmya from "./components/GeetaMahatmya";
 import HomePage from "./components/HomePage";
+import Shloka from "./components/Shloka";
 import Table from "./components/Table";
 
 function App() {
-  // document.addEventListener(
-  //   "contextmenu",
-  //   function (e) {
-  //     e.preventDefault();
-  //   },
-  //   false
-  // );
+  document.addEventListener(
+    "contextmenu",
+    function (e) {
+      e.preventDefault();
+    },
+    false
+  );
   return (
     <div className="App">
       <BrowserRouter>
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/chapter/:chapterNo">
             <ChapterDetails />
+          </Route>
+          <Route exact path="/chapter/:chapterNo/verse/:verseNo">
+            <Shloka />
           </Route>
           <Route exact path="/basics">
             <Basics />

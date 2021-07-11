@@ -194,14 +194,12 @@ td {
 .mahatmyaShloka p:nth-child(4) {
   margin-top: 1.5vh;
 }
-.mahatmyaShloka p:nth-child(4),
-.mahatmyaShloka p:nth-child(7) {
+.mahatmyaShloka p:nth-child(3),
+.mahatmyaShloka p:nth-child(5) {
   text-align: justify;
 }
 .mahatmyaShloka p:nth-child(2),
-.mahatmyaShloka p:nth-child(3),
-.mahatmyaShloka p:nth-child(5),
-.mahatmyaShloka p:nth-child(6) {
+.mahatmyaShloka p:nth-child(4) {
   font-weight: 650;
 }
 .mahatmyaShloka p {

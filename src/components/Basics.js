@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import { JumpCircleLoading } from "react-loadingg";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-import { DoubleArrowRounded } from "@material-ui/icons";
-import { Tooltip } from "@material-ui/core";
 
 function Basics() {
   const [EngChapBasics, setEngChapBasics] = useState([]);
@@ -58,19 +56,11 @@ function Basics() {
                         key={data.chapter_number}
                         className="Chapters">
                         <Fade bottom delay={1000} duration={1500}>
-                          <h2>
+                          <h2
+                            onClick={() => {
+                              history.push(`/chapter/${data.chapter_number}`);
+                            }}>
                             Chapter-{data.chapter_number}
-                            <Tooltip
-                              title={`Go to chapter ${data.chapter_number}`}>
-                              <DoubleArrowRounded
-                                className="gotodetail"
-                                onClick={() => {
-                                  history.push(
-                                    `/chapter/${data.chapter_number}`
-                                  );
-                                }}
-                              />
-                            </Tooltip>
                           </h2>
                         </Fade>
                         <Fade bottom delay={1000} duration={1500}>
@@ -98,28 +88,23 @@ function Basics() {
                         id={data.chapter_number}
                         key={data.chapter_number}
                         className="Chapters">
-                        <h2 className="hindiData">
+                        <h2
+                          onClick={() => {
+                            indian.convert(
+                              data.chapter_number,
+                              "hindi",
+                              "english",
+                              function (err, res) {
+                                if (err) {
+                                  alert(err);
+                                } else {
+                                  history.push(`/chapter/${res}`);
+                                }
+                              }
+                            );
+                          }}
+                          className="hindiData">
                           अध्याय-{data.chapter_number}
-                          <Tooltip
-                            title={`Go to chapter ${data.chapter_number}`}>
-                            <DoubleArrowRounded
-                              className="gotodetail"
-                              onClick={() => {
-                                indian.convert(
-                                  data.chapter_number,
-                                  "hindi",
-                                  "english",
-                                  function (err, res) {
-                                    if (err) {
-                                      alert(err);
-                                    } else {
-                                      history.push(`/chapter/${res}`);
-                                    }
-                                  }
-                                );
-                              }}
-                            />
-                          </Tooltip>
                         </h2>
                         <h3 className="hindiData">
                           {data.name} ({data.name_meaning})

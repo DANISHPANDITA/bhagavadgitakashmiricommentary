@@ -5,17 +5,20 @@ import "../styles/HomePage.css";
 import { useHistory } from "react-router-dom";
 import { PointSpreadLoading } from "react-loadingg";
 import Fade from "react-reveal/Fade";
-
+import { useDispatch } from "react-redux";
+import { resetShlokaData } from "../redux/slice";
 function HomePage() {
   const history = useHistory();
   const [backState, setBackState] = useState(false);
-
+  const dispatch = useDispatch();
   useEffect(() => {
     fetch(
       "https://assets.entrepreneur.com/content/3x2/2000/1597240199-bhagavadgita-6s.jpg"
     ).then((res) => setBackState(res.ok));
   }, []);
-
+  useEffect(() => {
+    dispatch(resetShlokaData());
+  }, [dispatch]);
   const goToMahatmya = () => {
     history.push("/geetamahatmya");
     window.location.reload();
