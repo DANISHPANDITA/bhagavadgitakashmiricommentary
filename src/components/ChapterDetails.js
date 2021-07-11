@@ -26,10 +26,7 @@ function ChapterDetails() {
   const [shlokaAudio4, setShlokaAudio4] = useState([]);
   var engD = [];
   var HindiD = [];
-  const engDataURL =
-    "https://run.mocky.io/v3/92b462e0-4c57-4aa2-b616-2edab5f3d547";
-  const HindiDataURL =
-    "https://run.mocky.io/v3/a6f09537-1ecb-4142-96cd-499119e39953";
+
 
   useEffect(() => {
     fetch(engDataURL)
