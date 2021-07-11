@@ -79,6 +79,12 @@
   .chapterHeading h2 {
     font-size: 6vw;
   }
+  .LinkTOShloka {
+    height: 0.8vh;
+  }
+  .linktoShloka {
+    font-size: x-small;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1300px) {

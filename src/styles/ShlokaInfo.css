@@ -30,12 +30,13 @@
 }
 .ShlokaInfo h2 {
   border: 2px solid rgb(196, 196, 196);
-  padding: 0.4vw 1.5vw 0.4vw 1.5vw;
-  width: fit-content;
+  padding: 0.2vw 0 0.2vw 0;
+  margin-bottom: 0.4vh;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.4vh;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(218, 219, 141);
   transition: 250ms ease-in-out;
 }
 .ShlokaInfo h2:hover {
