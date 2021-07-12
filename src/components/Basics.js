@@ -8,13 +8,16 @@ import { Link } from "react-router-dom";
 import { JumpCircleLoading } from "react-loadingg";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-
+import { TiArrowRightThick } from "react-icons/ti";
 function Basics() {
   const [EngChapBasics, setEngChapBasics] = useState([]);
   const [HindiChapBasics, setHindiChapBasics] = useState([]);
   const [Lang, setLang] = useState(true);
   const history = useHistory();
- 
+  const hindiDataURL =
+    "https://run.mocky.io/v3/a6f09537-1ecb-4142-96cd-499119e39953";
+  const engDataURL =
+    "https://run.mocky.io/v3/92b462e0-4c57-4aa2-b616-2edab5f3d547";
 
   useEffect(() => {
     fetch(engDataURL)
@@ -58,6 +61,7 @@ function Basics() {
                               history.push(`/chapter/${data.chapter_number}`);
                             }}>
                             Chapter-{data.chapter_number}
+                            <TiArrowRightThick />
                           </h2>
                         </Fade>
                         <Fade bottom delay={1000} duration={1500}>
@@ -102,6 +106,7 @@ function Basics() {
                           }}
                           className="hindiData">
                           अध्याय-{data.chapter_number}
+                          <TiArrowRightThick />
                         </h2>
                         <h3 className="hindiData">
                           {data.name} ({data.name_meaning})

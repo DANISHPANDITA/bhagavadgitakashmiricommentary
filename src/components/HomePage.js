@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import { PointSpreadLoading } from "react-loadingg";
 import Fade from "react-reveal/Fade";
 import { useDispatch } from "react-redux";
-import { resetShlokaData } from "../redux/slice";
+
 function HomePage() {
   const history = useHistory();
   const [backState, setBackState] = useState(false);
@@ -17,8 +17,7 @@ function HomePage() {
     ).then((res) => setBackState(res.ok));
   }, []);
   useEffect(() => {
-    alert("Going to a particular Shloka through URL has been disabled.");
-    dispatch(resetShlokaData());
+    alert("Directly accessing Shloka through URL has been disabled.");
   }, [dispatch]);
   const goToMahatmya = () => {
     history.push("/geetamahatmya");

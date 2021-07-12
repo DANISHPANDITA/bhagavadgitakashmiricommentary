@@ -2,7 +2,13 @@ import firebase from "firebase";
 
 const app5 = firebase.initializeApp(
   {
-//data here
+    apiKey: "AIzaSyAsra0SrQ33ovzTixa14z9dms565hRutG4",
+    authDomain: "gitabysharnagat5.firebaseapp.com",
+    projectId: "gitabysharnagat5",
+    storageBucket: "gitabysharnagat5.appspot.com",
+    messagingSenderId: "577239956819",
+    appId: "1:577239956819:web:b73102793e74ff78e675a6",
+    measurementId: "G-27QT5Z310W",
   },
   "secondary3"
 );

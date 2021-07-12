@@ -5,6 +5,7 @@ import "../styles/ShlokaInfo.css";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToShlokaData } from "../redux/slice";
+import { TiArrowRightThick } from "react-icons/ti";
 function ShlokaInfo({
   number,
   transliteration,
@@ -41,7 +42,9 @@ function ShlokaInfo({
   return (
     <center>
       <div className="ShlokaInfo">
-        <h2 onClick={goToShlok}>{number}</h2>
+        <h2 onClick={goToShlok}>
+          {number} <TiArrowRightThick />
+        </h2>
         {ShlokaText(text)}
 
         <p className="meaning">

@@ -1,10 +1,14 @@
+/** @format */
+
 import React, { useEffect, useState } from "react";
 import "../styles/Table.css";
 import Transliterator from "libindic-transliteration";
 import { PassThrouthLoading } from "react-loadingg";
 function Table() {
   const [tableData, setTableData] = useState({});
-   useEffect(() => {
+  const TableURI =
+    "https://run.mocky.io/v3/da7fa2e9-dc24-4b98-9449-76f571cb4d19";
+  useEffect(() => {
     fetch(TableURI)
       .then((res) => res.json())
       .then((data) => setTableData(data));
@@ -60,8 +64,7 @@ function Table() {
 
               width: "90vw",
               "overflow-y": "auto",
-            }}
-          >
+            }}>
             <table id="myTable">
               <tr className="headingTable">
                 <th>S No.</th>

@@ -22,7 +22,7 @@ function App() {
     return str.split(subStr, i).join(subStr).length;
   }
   const shlokaData = useSelector(selectShlokaDataDetails);
-  console.log(shlokaData);
+
   return (
     <div className="App">
       <BrowserRouter>
